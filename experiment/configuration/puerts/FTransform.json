@@ -1,0 +1,386 @@
+
+[
+    {
+        "modulename":"VariableName",
+        "content":[
+            {
+                "kind":"ConstVar",
+                "id":"%",
+                "dictionary":{
+                    "isoname":"isolate",
+                    "contextname":"context",
+                    "globalname":"globalobj",
+                    "gluefuncarg":"args",
+                    "envname":"env",
+                    "glue":"_glue",
+                    "constructor":"_constructor",
+                    "ptr":"ptr"           
+                }
+            }
+        ]
+    },
+    {
+        "modulename":"Api",
+        "content":[
+            {
+                "setname":"JsTypeCheck",
+                "argument":[
+                    "'#jsvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"float",
+                        "pattern":[
+                            "'#jsvalue->IsNumber()"
+                        ]
+                    },
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "'#jsvalue->IsInt32()"
+                        ]
+                    },
+                    {
+                        "type":"FString",
+                        "pattern":[
+                            "'#jsvalue->IsString()"
+                        ]
+                    },
+                    {
+                        "type":"FTransform",
+                        "pattern":[
+                            "'#jsvalue->IsObject() && puerts::DataTransfer::IsInstanceOf<'#type>('%isoname, '#jsvalue->ToObject('%contextname).ToLocalChecked())"
+                        ]
+                    },
+                    {
+                        "type":"FVector4",
+                        "pattern":[
+                            "'#jsvalue->IsObject() && puerts::DataTransfer::IsInstanceOf<'#type>('%isoname, '#jsvalue->ToObject('%contextname).ToLocalChecked())"
+                        ]
+                    },
+                    {
+                        "type":"FVector",
+                        "pattern":[
+                            "'#jsvalue->IsObject() && puerts::DataTransfer::IsInstanceOf<'#type>('%isoname, '#jsvalue->ToObject('%contextname).ToLocalChecked())"
+                        ]
+                    },
+                    {
+                        "type":"FQuat",
+                        "pattern":[
+                            "'#jsvalue->IsObject() && puerts::DataTransfer::IsInstanceOf<'#type>('%isoname, '#jsvalue->ToObject('%contextname).ToLocalChecked())"
+                        ]
+                    },
+                    {
+                        "type":"EAxis::Type",
+                        "pattern":[
+                            "'#jsvalue->IsNumber()"
+                        ]
+                    }
+                ]
+            },
+            {
+                "setname":"Js2CValueConvert",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"float",
+                        "pattern":[
+                            "'#cvalue = '#jsvalue->ToNumber('%contextname).ToLocalChecked()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "'#cvalue = '#jsvalue->ToInteger('%contextname).ToLocalChecked()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"FString",
+                        "pattern":[
+                            "'#cvalue = UTF8_TO_TCHAR(*(v8::String::Utf8Value('%isoname, '#jsvalue)));"
+                        ]
+                    },
+                    {
+                        "type":"FTransform",
+                        "pattern":[
+                            "'#type* '&fb = *puerts::DataTransfer::GetPointerFast<'#type>('#jsvalue->ToObject('%contextname).ToLocalChecked());",
+                            "'#cvalue = *'&fb;"
+                        ]
+                    },
+                    {
+                        "type":"FVector4",
+                        "pattern":[
+                            "'#type* '&fb = *puerts::DataTransfer::GetPointerFast<'#type>('#jsvalue->ToObject('%contextname).ToLocalChecked());",
+                            "'#cvalue = *'&fb;"
+                        ]
+                    },
+                    {
+                        "type":"FVector",
+                        "pattern":[
+                            "'#type* '&fb = *puerts::DataTransfer::GetPointerFast<'#type>('#jsvalue->ToObject('%contextname).ToLocalChecked());",
+                            "'#cvalue = *'&fb;"
+                        ]
+                    },
+                    {
+                        "type":"FQuat",
+                        "pattern":[
+                            "'#type* '&fb = *puerts::DataTransfer::GetPointerFast<'#type>('#jsvalue->ToObject('%contextname).ToLocalChecked());",
+                            "'#cvalue = *'&fb;"
+                        ]
+                    },
+                    {
+                        "type":"EAxis::Type",
+                        "pattern":[
+                            "EAxis::Type '#cvalue = EAxis::Type('#jsvalue->ToInt32('%contextname).ToLocalChecked()->Value());"
+                        ]
+                    }
+                ]
+            },
+            {
+                "setname":"C2JsValueConvert",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"float",
+                        "pattern":[
+                            "auto '#jsvalue = v8::Number::New('%isoname, '#cvalue);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "auto '#jsvalue = v8::Integer::New('%isoname, '#cvalue);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"unsigned int",
+                        "pattern":[
+                            "auto '#jsvalue = v8::Integer::New('%isoname, '#cvalue);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "auto '#jsvalue = v8::Boolean::New('%isoname, '#cvalue);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"FTransform",
+                        "pattern":[
+                            "void* Ptr = new FBox2D('#cvalue);",
+                            "auto '#jsvalue = puerts::DataTransfer::FindOrAddStruct<'#type>('%isoname, '%contextname, Ptr, false);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"FVector4",
+                        "pattern":[
+                            "void* Ptr = new FBox2D('#cvalue);",
+                            "auto '#jsvalue = puerts::DataTransfer::FindOrAddStruct<'#type>('%isoname, '%contextname, Ptr, false);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"FVector",
+                        "pattern":[
+                            "void* Ptr = new FBox2D('#cvalue);",
+                            "auto '#jsvalue = puerts::DataTransfer::FindOrAddStruct<'#type>('%isoname, '%contextname, Ptr, false);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"FQuat",
+                        "pattern":[
+                            "void* Ptr = new FBox2D('#cvalue);",
+                            "auto '#jsvalue = puerts::DataTransfer::FindOrAddStruct<'#type>('%isoname, '%contextname, Ptr, false);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"FRotator",
+                        "pattern":[
+                            "void* Ptr = new FBox2D('#cvalue);",
+                            "auto '#jsvalue = puerts::DataTransfer::FindOrAddStruct<'#type>('%isoname, '%contextname, Ptr, false);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    }
+                   
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Routine",
+        "content":
+        [
+            {
+                "routinename":"JS2CVALUE",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "pattern":[
+                    "if('*JsTypeCheck'('#jsvalue,'#type')){",
+                    "   '*Js2CValueConvert'('#jsvalue,'#cvalue,'#type')}"
+                ]
+            },
+            {
+                "routinename":"DEREFERENCE",
+                "argument":[
+                    "'#jsarg",
+                    "'#cpointername",
+                    "'#class"
+                ],
+                "pattern":[
+                    "'#class* '#cpointername;",
+                    "ASSIGN_OR_RETURN_UNWRAP(&'#cpointername, '%gluefuncarg.Holder());"
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Pattern",
+        "content":[
+            {
+                "patname":"GLOBALCONTEXT",
+                "pattern":[
+                ]
+            },
+            {
+                "patname":"V8ENVINIT",
+                "pattern":[
+                ]
+            },
+            {
+                "patname":"GLUECONTEXTINIT",
+                "pattern":[
+                    "'ENTERSCOPE",
+                    "//register code snippet"
+                ]
+            },
+            {
+                "patname":"FUNCGLUE",
+                "pattern":[
+                ]
+            },
+            {
+                "patname":"CLASSGLUE",
+                "pattern":{
+                    "begin":[
+                        "puerts::JSClassDefinition Def = JSClassEmptyDefinition;",
+                        "static puerts::JSFunctionInfo Methods[] = {"
+                    ],
+                    "funcglue":[
+                        "{\"'$cfuncname\", '$cclassname_'$cfuncname'%glue},"
+                    ],
+                    "end":[
+                        "{0, 0}};",
+                        "Def.UETypeName = \"'$cclassname\";",
+                        "Def.Methods = Methods;",
+                        "puerts::RegisterJSClass(Def);"
+                    ]            
+                }
+            },
+            {
+                "patname":"FUNCPROXY",
+                "pattern":{
+                    "funcsignature":"void '$cfuncname'%glue(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                    "context":[  
+                        "v8::Isolate* '%isoname = '%gluefuncarg.GetIsolate();",
+                        "v8::Local<v8::Context> '%contextname = '%isoname->GetCurrentContext();"
+                    ],
+                    "js2c":[
+                        "'$cargtype '&carg;",
+                        "'@JS2CVALUE'('%gluefuncarg['$cargindex],'&carg,'$cargtype')",
+                        "else{  puerts::DataTransfer::ThrowException('%isoname, \"Invalid argument!\");",
+                        "   return;}"
+                    ],
+                    "js2cspecialtype":[
+                    
+                    ],
+                    "calling":{
+                        "argname":"'&carg",
+                        "resname":"cres"
+                    },
+                    "c2js":[
+                        "'*C2JsValueConvert'(jsres,cres,'$crestype')"
+                    ]
+                }
+            },
+            {
+                "patname":"CLASSPROXY",
+                "pattern":[
+                    {
+                        "name":"CONSTRUCTOR",
+                        "funcsignature":"void '$cclassname_'%constructor(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                        "context":[
+                            "Isolate* '%isoname = '%gluefuncarg.GetIsolate();",
+                            "Local<Context> '%contextname = '%isoname->GetCurrentContext();"
+                        ],
+                        "js2c":[],
+                        "js2cspecialtype":[
+                            
+                        ],
+                        "calling":{
+                            "argname":"'&carg",
+                            "cptrname":"obj"
+                        },
+                        "content":[
+                        ]
+                    },
+                    {
+                        "name":"CLASSFUNCPROXY",
+                        "funcsignature":"void '$cclassname_'$cfuncname'%glue(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                        "context":[
+                            "Isolate* '%isoname = '%gluefuncarg.GetIsolate();",
+                            "Local<Context> '%contextname = '%isoname->GetCurrentContext();",
+                            "auto Self = puerts::DataTransfer::GetPointerFast<'$cclassname>('%gluefuncarg.Holder());",
+                            "if(!Self){",
+                            "   puerts::DataTransfer::ThrowException('%isoname, \"['$cclassname::M_'$cfuncname] Attempt to access a NULL self pointer\");",
+                            "   return;}"
+                        ],
+                        "js2c":[],
+                        "js2cspecialtype":[],
+                        "calling":{
+                            "argname":"'&carg",
+                            "resname":"cres",
+                            "cptrname":"Self",
+                            "proxy":""
+                        },
+                        "c2js":[]
+                    }
+                ]
+            },
+            {
+                "patname":"JSCODEEXEC",
+                "pattern":[
+                ]
+            },
+            {
+                "patname":"GLUECONTEXTEND",
+                "pattern":[
+                    "'EXITSCOPE"
+                ]
+            },
+            {
+                "patname":"V8ENVEND",
+                "pattern":[
+                ]
+            }
+        ]
+    }   
+]

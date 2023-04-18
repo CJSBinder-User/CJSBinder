@@ -1,0 +1,264 @@
+
+[
+    {
+        "modulename":"VariableName",
+        "content":[
+            {
+                "kind":"ConstVar",
+                "id":"%",
+                "dictionary":{
+                    "globalobj":"target",
+                    "gluefuncarg":"args",
+                    "glue":"_glue",
+                    "constructor":"_constructor",
+                    "envname":"env",
+                    "ptr":"ptr",
+                    "wrap":"Wrap"
+                }
+            }
+        ]
+    },
+    {
+        "modulename":"Api",
+        "content":[
+            {
+                "setname":"Js2CValueConvert",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Napi::Number>().Int32Value();"
+                        ]
+                    },
+                    {
+                        "type":"unsigned int",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Napi::Number>().Uint32Value();"
+                        ]
+                    },
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Napi::Number>().DoubleValue();"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Napi::Boolean>().Value();"
+                        ]
+                    },
+                    {
+                        "type":"const QString &",
+                        "pattern":[
+                            "Napi::String '&napistr = '#jsvalue.As<Napi::String>();",
+                            "auto '#cvalue = QString::fromStdString('&napistr.Utf8Value());"
+                        ]
+                    },
+                    {
+                        "type":"const QByteArray &",
+                        "pattern":[
+                            "std::string '&format = '#jsvalue.As<Napi::String>().Utf8Value();",
+                            "QByteArray '#cvalue('&format.c_str(), '&format.length());"
+                        ]
+                    },
+                    {
+                        "type":"const QSize &",
+                        "pattern":[
+                            "Napi::Object '&sizeObject = '#jsvalue.As<Napi::Object>();",
+                            "QSizeWrap* '&sizeWrap = Napi::ObjectWrap<QSizeWrap>::Unwrap('&sizeObject);",
+                            "auto '#cvalue = *'&sizeWrap->getInternalInstance()"
+                        ]
+                    }
+                ]
+            },
+            {
+                "setname":"C2JSValueConvert",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "auto '#jsvalue = Napi::Value::From(env, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"unsigned int",
+                        "pattern":[
+                            "auto '#jsvalue = Napi::Value::From(env, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "auto '#jsvalue = Napi::Value::From(env, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "auto '#jsvalue = Napi::Value::From(env, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"QString",
+                        "pattern":[
+                            "auto '#jsvalue = Napi::Value::From(env, '#cvalue.toStdString())"
+                        ]
+                    },
+                    {
+                        "type":"QByteArray",
+                        "pattern":[
+                            "auto '#jsvalue = Napi::Value::From(env, '#cvalue.toStdString())"
+                        ]
+                    },
+                    {
+                        "type":"MovieState",
+                        "pattern":[
+                            "auto '#jsvalue = Napi::Value::From(env, static_cast<int>('#cvalue));"
+                        ]
+                    },
+                    {
+                        "type":"QPixmap",
+                        "pattern":[
+                            "auto '#jsvalue = QPixmapWrap::constructor.New({Napi::External<QPixmap>::New(env, new QPixmap('#cvalue))});"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Routine",
+        "content":
+        [
+            {
+                "routinename":"JS2CVALUE",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "pattern":[
+                    "'*Js2CValueConvert'('#jsvalue,'#cvalue,'#type')"
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Pattern",
+        "content":[
+            {
+                "patname":"GLUECONTEXTINIT",
+                "pattern":[
+                    "'ENTERSCOPE",
+                    "//register code snippet"
+                ]
+            },
+            {
+                "patname":"FUNCGLUE",
+                "pattern":[
+                    "Local<String> '&funckey = String::NewFromUtf8('%isoname, \"'$cfuncname\").ToLocalChecked();",
+                    "Local<Function> '&funcobjname = Function::New('%contextname, '$cfuncname'%glue).ToLocalChecked();",
+                    "'%globalname->Set('%contextname, '&funckey, '&funcobjname).ToChecked();"
+                ]
+            },
+            {
+                "patname":"CLASSGLUE",
+                "pattern":{
+                    "begin":[
+                        "Napi::HandleScope scope(env);",
+                        "char CLASSNAME[] = \"'$cclassname\";",
+                        "Napi::Function func = DefineClass(",
+                        "    env, CLASSNAME,{"
+                    ],
+                    "funcglue":[
+                        "   InstanceMethod(\"'$cfuncname\", &'$cclassname'%wrap::'$cfuncname),"
+                    ],
+                    "end":[
+                        "   QOBJECT_WRAPPED_METHODS_EXPORT_DEFINE('$cclassname'%wrap)});",
+                        "auto constructor = Napi::Persistent(func);",
+                        "'%globalobj.Set(CLASSNAME, func);"
+                    ]            
+                }
+            },
+            {
+                "patname":"FUNCPROXY",
+                "pattern":{
+                    "funcsignature":"void '$cfuncname'%glue(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                    "context":[  
+                        "Isolate* '%isoname = '%gluefuncarg.GetIsolate();"
+                    ],
+                    "js2c":[
+                        "'*Js2CValueConvert'('%gluefuncarg['$cargindex],'&carg,'$cargtype')"
+                    ],
+                    "js2cspecialtype":[
+                    ],
+                    "calling":{
+                        "argname":"'&carg",
+                        "resname":"cres"
+                    },
+                    "c2js":[
+                        "'*C2JSValueConvert'(jsres,cres,'$crestype')",
+                        "return jsres;"
+                    ]
+                }
+            },
+            {
+                "patname":"CLASSPROXY",
+                "pattern":[
+                    {
+                        "name":"CONSTRUCTOR",
+                        "funcsignature":"Napi::Value '$cclassname'%wrap(const Napi::CallbackInfo& '%gluefuncarg)",
+                        "context":[
+                            "Environment* '%envname = Environment::GetCurrent('%gluefuncarg);"
+                        ],
+                        "js2c":[],
+                        "js2cspecialtype":[
+                        ],
+                        "calling":{
+                            "argname":"'&carg",
+                            "cptrname":"obj"
+                        },
+                        "content":[
+                        ]
+                    },
+                    {
+                        "name":"CLASSFUNCPROXY",
+                        "funcsignature":"Napi::Value '$cclassname'%wrap::'$cfuncname(const Napi::CallbackInfo& '%gluefuncarg)",
+                        "context":[
+                            "Napi::Env '%envname = '%gluefuncarg.Env();"
+                        ],
+                        "js2c":[],
+                        "js2cspecialtype":[],
+                        "calling":{
+                            "argname":"'&carg",
+                            "resname":"cres",
+                            "cptrname":"this",
+                            "proxy":"instance->"
+                        },
+                        "c2js":[],
+                        "voidhandle":[
+                            "return '%envname.Null();"
+                        ]
+                    }
+                ]
+            },
+            {
+                "patname":"GLUECONTEXTEND",
+                "pattern":[
+                    "'EXITSCOPE"
+                ]
+            }
+        ]
+    }   
+]

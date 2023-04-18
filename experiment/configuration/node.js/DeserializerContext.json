@@ -1,0 +1,363 @@
+
+[
+    {
+        "modulename":"VariableName",
+        "content":[
+            {
+                "kind":"ConstVar",
+                "id":"%",
+                "dictionary":{
+                    "isoname":"isolate",
+                    "contextname":"context",
+                    "globalname":"target",
+                    "gluefuncarg":"args",
+                    "envname":"env",
+                    "glue":"_glue",
+                    "constructor":"_constructor",
+                    "ptr":"ptr",
+                    "suffix":"String",
+                    "new":"New"
+                }
+            }
+        ]
+    },
+    {
+        "modulename":"Api",
+        "content":[
+            {
+                "setname":"JsTypeCheck",
+                "argument":[
+                    "'#jsvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"long long",
+                        "pattern":[
+                            "'#jsvalue->IsNumber()"
+                        ]
+                    },
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "'#jsvalue->IsNumber()"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "'#jsvalue->IsBoolean()"
+                        ]
+                    },
+                    {     
+                        "type":"int",
+                        "pattern":[
+                            "'#jsvalue->IsInt32()"
+                        ]
+                    },
+                    {     
+                        "type":"unsigned int",
+                        "pattern":[
+                            "'#jsvalue->IsUint32()"
+                        ]
+                    },
+                    {
+                        "type":"Local<ArrayBuffer>",
+                        "pattern":[
+                            "'#jsvalue->IsArrayBuffer()"
+                        ]
+                    },
+                    {
+                        "type":"Local<SharedArrayBuffer>",
+                        "pattern":[
+                            "'#jsvalue->IsSharedArrayBuffer()"
+                        ]
+                    },
+                    {
+                        "type":"Local<Uint8Array>",
+                        "pattern":[
+                            "'#jsvalue->IsUint8Array()"
+                        ]
+                    }
+                ]
+            },
+            {
+                "setname":"Js2CValueConvert",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Int32>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"long long",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Integer>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"unsigned int",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Uint32>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Number>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue->IsTrue();"
+                        ]
+                    },
+                    {
+                        "type":"Local<ArrayBuffer>",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<ArrayBuffer>();"
+                        ]
+                    },
+                    {
+                        "type":"Local<SharedArrayBuffer>",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<SharedArrayBuffer>();"
+                        ]
+                    }
+                ]
+            },
+            {
+                "setname":"RetByType",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "Environment* '%envname = Environment::GetCurrent('%gluefuncarg);",
+                            "Local<Number> '#jsvalue = Number::New('%envname->isolate(), '#cvalue);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"unsigned int",
+                        "pattern":[
+                            "Environment* '%envname = Environment::GetCurrent('%gluefuncarg);",
+                            "Local<Uint32> '#jsvalue = Uint32::New('%envname->isolate(), '#cvalue);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "'%gluefuncarg.GetReturnValue().Set('#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "Environment* '%envname = Environment::GetCurrent('%gluefuncarg);",
+                            "Local<Boolean> '#jsvalue = Boolean::New('%envname->isolate(), '#cvalue);",
+                            "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"MaybeLocal<Value>",
+                        "pattern":[
+                            "Local<Value> '#jsvalue = Null();",
+                            "if (!'#cvalue.IsEmpty())",
+                            "   '#jsvalue = '#cvalue.ToLocalChecked()",
+                            "args.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    },
+                    {
+                        "type":"Maybe<bool>",
+                        "pattern":[
+                            "bool '#jsvalue;",
+                            "if ('#cvalue.IsJust())",
+                            "   '#jsvalue = '#cvalue.FromJust();",
+                            "else return;",
+                            "args.GetReturnValue().Set('#jsvalue);"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Routine",
+        "content":
+        [
+            {
+                "routinename":"JS2CVALUE",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "pattern":[
+                    "CHECK('*JsTypeCheck'('#jsvalue,'#type'));",
+                    "'*Js2CValueConvert'('#jsvalue,'#cvalue,'#type')"
+                ]
+            },
+            {
+                "routinename":"DEREFERENCE",
+                "argument":[
+                    "'#jsarg",
+                    "'#cpointername",
+                    "'#class"
+                ],
+                "pattern":[
+                    "'#class* '#cpointername;",
+                    "ASSIGN_OR_RETURN_UNWRAP(&'#cpointername, '%gluefuncarg.Holder());"
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Pattern",
+        "content":[
+            {
+                "patname":"GLUECONTEXTINIT",
+                "pattern":[
+                    "'ENTERSCOPE",
+                    "//register code snippet"
+                ]
+            },
+            {
+                "patname":"CLASSGLUE",
+                "pattern":{
+                    "begin":[
+                        "Environment* env = Environment::GetCurrent('%contextname);",
+                        "Local<FunctionTemplate> '$cclassname_ctor_tpl = '%envname->NewFunctionTemplate('$cclassname'%constructor);",
+                        "'$cclassname_ctor_tpl->InstanceTemplate()->SetInternalFieldCount(1);"
+                    ],
+                    "funcglue":[
+                        "'%envname->SetProtoMethod('$cclassname_ctor_tpl, \"'$cfuncname\", '$cclassname_'$cfuncname'%glue);"
+                    ],
+                    "end":[
+                        "Local<String> '$cclassname'%suffix = FIXED_ONE_BYTE_STRING(env->isolate(), \"'$cclassname\");",
+                        "'$cclassname_ctor_tpl->SetClassName('$cclassname'%suffix);",
+                        "'%globalname->Set('%contextname,'$cclassname'%suffix,'$cclassname_ctor_tpl->GetFunction('%contextname).ToLocalChecked())"
+                    ]            
+                }
+            },
+            {
+                "patname":"FUNCPROXY",
+                "pattern":{
+                    "funcsignature":"void '$cfuncname'%glue(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                    "context":[  
+                        "Isolate* '%isoname = '%gluefuncarg.GetIsolate();"
+                    ],
+                    "js2c":[
+                        "'@JS2CVALUE'('%gluefuncarg['$cargindex],'&carg,'$cargtype')"
+                    ],
+                    "js2cspecialtype":[
+                        {
+                            "type":"Isolate *",
+                            "name":"'%isoname",
+                            "context":""
+                        },
+                        {
+                            "type":"Local<Context>",
+                            "name":"Environment::GetCurrent('%gluefuncarg)->context()",
+                            "context":""
+                        },
+                        {
+                            "type":"Local<Value>",
+                            "name":"'%gluefuncarg['$cargindex]",
+                            "context":""
+                        },
+                        {
+                            "type":"const FunctionCallbackInfo<Value> &",
+                            "name":"'%gluefuncarg",
+                            "context":""
+                        }
+
+                    ],
+                    "calling":{
+                        "argname":"'&carg",
+                        "resname":"cres"
+                    },
+                    "c2js":[
+                        "'*RetByType'(jsres,cres,'$crestype')"
+                    ]
+                }
+            },
+            {
+                "patname":"CLASSPROXY",
+                "pattern":[
+                    {
+                        "name":"CONSTRUCTOR",
+                        "funcsignature":"void '$cclassname'%constructor(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                        "context":[
+                            "Environment* '%envname = Environment::GetCurrent('%gluefuncarg);",
+                            "if(!'*JsTypeCheck'('%gluefuncarg[0],Local<Uint8Array>'))",
+                            "{",
+                            "   return;",
+                            "}"
+                        ],
+                        "js2c":[
+                            
+                        ],
+                        "js2cspecialtype":[
+                            {
+                                "type":"Local<Object>",
+                                "name":"'%gluefuncarg.This()",
+                                "context":""
+                            },
+                            {
+                                "type":"Environment *",
+                                "name":"'%envname",
+                                "context":""
+                            },
+                            {
+                                "type":"Local<Value>",
+                                "name":"'%gluefuncarg['$cargindex]",
+                                "context":""
+                            }
+                        ],
+                        "calling":{
+                            "argname":"'&carg",
+                            "cptrname":"obj"
+                        },
+                        "content":[
+                        ]
+                    },
+                    {
+                        "name":"CLASSFUNCPROXY",
+                        "funcsignature":"void '$cclassname_'$cfuncname'%glue(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                        "context":[
+                            "'@DEREFERENCE'('%gluefuncarg,'%ptr,'$cclassname')"
+                        ],
+                        "js2c":[],
+                        "js2cspecialtype":[],
+                        "calling":{
+                            "argname":"'&carg",
+                            "resname":"cres",
+                            "cptrname":"'%ptr",
+                            "proxy":"deserializer_."
+                        },
+                        "c2js":[]
+                    }
+                ]
+            },
+            {
+                "patname":"GLUECONTEXTEND",
+                "pattern":[
+                    "'EXITSCOPE"
+                ]
+            }
+        ]
+    }   
+]
