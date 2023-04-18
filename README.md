@@ -1,7 +1,7 @@
 # CJSBinder
 
 **CJSBinder** is a C-to-JavaScript glue code generator implemented in Python with Clang. Given C class declaration, **CJSBinder** can generate glue code to wrap the class into the JavaScript environment. A configuration file can be given to adjust the style of generated glue code.    
-**CJSBinder** can be runned with th following example command
+**CJSBinder** can be runned with the following example command:
 
 ---
      python3 generator.py -P configuration/node.js/AsynWrap.json -H input/node.js/AsynWrap.h -o output/node/AsynWrap.cpp
