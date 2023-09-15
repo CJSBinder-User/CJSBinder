@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67371 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/WAYS_REMOVE_ONE_ELEMENT_BINARY_STRING_XOR_BECOMES_ZERO/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/WAYS_REMOVE_ONE_ELEMENT_BINARY_STRING_XOR_BECOMES_ZERO/WAYS_REMOVE_ONE_ELEMENT_BINARY_STRING_XOR_BECOMES_ZERO.js > generator/WrapCQuesTest/CQues/SwigRunTest/WAYS_REMOVE_ONE_ELEMENT_BINARY_STRING_XOR_BECOMES_ZERO/WAYS_REMOVE_ONE_ELEMENT_BINARY_STRING_XOR_BECOMES_ZERO.txt

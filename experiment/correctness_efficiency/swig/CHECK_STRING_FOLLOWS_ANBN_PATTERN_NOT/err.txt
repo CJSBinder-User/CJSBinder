@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 55817 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_STRING_FOLLOWS_ANBN_PATTERN_NOT/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_STRING_FOLLOWS_ANBN_PATTERN_NOT/CHECK_STRING_FOLLOWS_ANBN_PATTERN_NOT.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_STRING_FOLLOWS_ANBN_PATTERN_NOT/CHECK_STRING_FOLLOWS_ANBN_PATTERN_NOT.txt

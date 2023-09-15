@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58645 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1.txt

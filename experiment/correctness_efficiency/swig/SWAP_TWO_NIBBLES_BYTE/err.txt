@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 66476 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SWAP_TWO_NIBBLES_BYTE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SWAP_TWO_NIBBLES_BYTE/SWAP_TWO_NIBBLES_BYTE.js > generator/WrapCQuesTest/CQues/SwigRunTest/SWAP_TWO_NIBBLES_BYTE/SWAP_TWO_NIBBLES_BYTE.txt

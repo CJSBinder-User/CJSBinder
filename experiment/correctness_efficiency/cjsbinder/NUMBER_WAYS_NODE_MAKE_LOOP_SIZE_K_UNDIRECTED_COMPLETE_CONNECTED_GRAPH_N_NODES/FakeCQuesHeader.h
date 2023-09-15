@@ -1,0 +1,8 @@
+class string;
+template <typename T>
+class vector;
+class NUMBER_WAYS_NODE_MAKE_LOOP_SIZE_K_UNDIRECTED_COMPLETE_CONNECTED_GRAPH_N_NODES {
+public:
+    int N_W_N_M_L_S_K_U_C_C_G_N_N_f_gold(int n, int k);
+NUMBER_WAYS_NODE_MAKE_LOOP_SIZE_K_UNDIRECTED_COMPLETE_CONNECTED_GRAPH_N_NODES() {}
+};

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 62631 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/BINARY_SEARCH/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/BINARY_SEARCH/BINARY_SEARCH.js > generator/WrapCQuesTest/CQues/SwigRunTest/BINARY_SEARCH/BINARY_SEARCH.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53824 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/TRIANGULAR_NUMBERS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/TRIANGULAR_NUMBERS/TRIANGULAR_NUMBERS.js > generator/WrapCQuesTest/CQues/SwigRunTest/TRIANGULAR_NUMBERS/TRIANGULAR_NUMBERS.txt

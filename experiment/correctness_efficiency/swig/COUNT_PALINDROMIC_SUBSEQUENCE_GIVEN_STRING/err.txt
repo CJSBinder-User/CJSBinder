@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 61911 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_PALINDROMIC_SUBSEQUENCE_GIVEN_STRING/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_PALINDROMIC_SUBSEQUENCE_GIVEN_STRING/COUNT_PALINDROMIC_SUBSEQUENCE_GIVEN_STRING.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_PALINDROMIC_SUBSEQUENCE_GIVEN_STRING/COUNT_PALINDROMIC_SUBSEQUENCE_GIVEN_STRING.txt

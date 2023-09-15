@@ -1,0 +1,11 @@
+6
+number is not present!-1
+number is not present!-1
+number is not present!-1
+number is not present!-1
+number is not present!-1
+number is not present!-1
+number is not present!-1
+number is not present!-1
+0
+type error!

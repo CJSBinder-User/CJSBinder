@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60385 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_DIFFERENCE_MAX_MIN_K_SIZE_SUBSETS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_DIFFERENCE_MAX_MIN_K_SIZE_SUBSETS/MINIMUM_DIFFERENCE_MAX_MIN_K_SIZE_SUBSETS.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_DIFFERENCE_MAX_MIN_K_SIZE_SUBSETS/MINIMUM_DIFFERENCE_MAX_MIN_K_SIZE_SUBSETS.txt

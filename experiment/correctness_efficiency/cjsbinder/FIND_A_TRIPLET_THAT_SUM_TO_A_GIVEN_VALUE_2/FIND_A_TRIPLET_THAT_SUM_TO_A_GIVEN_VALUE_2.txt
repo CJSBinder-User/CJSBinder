@@ -1,0 +1,11 @@
+Triplet is 1, 15, 8true
+Triplet is 20, 72, -72true
+false
+false
+false
+Triplet is 1, 1, 1true
+false
+Triplet is 18, 60, -48true
+false
+false
+type error!

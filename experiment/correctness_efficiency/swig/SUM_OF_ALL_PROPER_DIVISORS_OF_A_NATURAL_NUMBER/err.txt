@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60167 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUM_OF_ALL_PROPER_DIVISORS_OF_A_NATURAL_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUM_OF_ALL_PROPER_DIVISORS_OF_A_NATURAL_NUMBER/SUM_OF_ALL_PROPER_DIVISORS_OF_A_NATURAL_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUM_OF_ALL_PROPER_DIVISORS_OF_A_NATURAL_NUMBER/SUM_OF_ALL_PROPER_DIVISORS_OF_A_NATURAL_NUMBER.txt

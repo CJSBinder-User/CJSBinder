@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60445 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUBARRAY_SUM_USING_PREFIX_SUM/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUBARRAY_SUM_USING_PREFIX_SUM/MAXIMUM_SUBARRAY_SUM_USING_PREFIX_SUM.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUBARRAY_SUM_USING_PREFIX_SUM/MAXIMUM_SUBARRAY_SUM_USING_PREFIX_SUM.txt

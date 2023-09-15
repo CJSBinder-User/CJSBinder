@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 71438 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_PAIR_WITH_GREATEST_PRODUCT_IN_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_PAIR_WITH_GREATEST_PRODUCT_IN_ARRAY/FIND_PAIR_WITH_GREATEST_PRODUCT_IN_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_PAIR_WITH_GREATEST_PRODUCT_IN_ARRAY/FIND_PAIR_WITH_GREATEST_PRODUCT_IN_ARRAY.txt

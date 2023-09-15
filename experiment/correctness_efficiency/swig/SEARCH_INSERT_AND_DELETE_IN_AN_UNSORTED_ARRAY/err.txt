@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52808 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SEARCH_INSERT_AND_DELETE_IN_AN_UNSORTED_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SEARCH_INSERT_AND_DELETE_IN_AN_UNSORTED_ARRAY/SEARCH_INSERT_AND_DELETE_IN_AN_UNSORTED_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/SEARCH_INSERT_AND_DELETE_IN_AN_UNSORTED_ARRAY/SEARCH_INSERT_AND_DELETE_IN_AN_UNSORTED_ARRAY.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53144 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_INVERSIONS_OF_SIZE_THREE_IN_A_GIVE_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_INVERSIONS_OF_SIZE_THREE_IN_A_GIVE_ARRAY/COUNT_INVERSIONS_OF_SIZE_THREE_IN_A_GIVE_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_INVERSIONS_OF_SIZE_THREE_IN_A_GIVE_ARRAY/COUNT_INVERSIONS_OF_SIZE_THREE_IN_A_GIVE_ARRAY.txt

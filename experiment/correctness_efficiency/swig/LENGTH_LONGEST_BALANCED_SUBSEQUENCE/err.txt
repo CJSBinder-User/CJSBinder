@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 59349 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/LENGTH_LONGEST_BALANCED_SUBSEQUENCE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/LENGTH_LONGEST_BALANCED_SUBSEQUENCE/LENGTH_LONGEST_BALANCED_SUBSEQUENCE.js > generator/WrapCQuesTest/CQues/SwigRunTest/LENGTH_LONGEST_BALANCED_SUBSEQUENCE/LENGTH_LONGEST_BALANCED_SUBSEQUENCE.txt

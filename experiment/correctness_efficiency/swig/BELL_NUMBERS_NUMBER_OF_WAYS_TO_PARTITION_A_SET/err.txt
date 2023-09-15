@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 55276 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/BELL_NUMBERS_NUMBER_OF_WAYS_TO_PARTITION_A_SET/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/BELL_NUMBERS_NUMBER_OF_WAYS_TO_PARTITION_A_SET/BELL_NUMBERS_NUMBER_OF_WAYS_TO_PARTITION_A_SET.js > generator/WrapCQuesTest/CQues/SwigRunTest/BELL_NUMBERS_NUMBER_OF_WAYS_TO_PARTITION_A_SET/BELL_NUMBERS_NUMBER_OF_WAYS_TO_PARTITION_A_SET.txt

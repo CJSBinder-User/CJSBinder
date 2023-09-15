@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 62692 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/HIGHWAY_BILLBOARD_PROBLEM/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/HIGHWAY_BILLBOARD_PROBLEM/HIGHWAY_BILLBOARD_PROBLEM.js > generator/WrapCQuesTest/CQues/SwigRunTest/HIGHWAY_BILLBOARD_PROBLEM/HIGHWAY_BILLBOARD_PROBLEM.txt

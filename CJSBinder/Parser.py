@@ -36,6 +36,7 @@ class CParser:
         parmname = pd.spelling
         partype = pd.type.spelling
         partype = partype.replace("v8::","")
+        partype = partype.replace("std::__cxx11::string","string")
         #if partype == "std::string":
             #partype = "string"
         return(parmname,partype)
@@ -43,6 +44,7 @@ class CParser:
         funcname = fd.spelling
         restype = fd.result_type.spelling
         restype = restype.replace("v8::","")
+        restype = restype.replace("std::__cxx11::string","string")
         arglis = []
         for arg in fd.get_arguments():
             par = self.parsePARM_DECL(arg)

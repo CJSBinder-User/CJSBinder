@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58768 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NTH_EVEN_LENGTH_PALINDROME/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NTH_EVEN_LENGTH_PALINDROME/NTH_EVEN_LENGTH_PALINDROME.js > generator/WrapCQuesTest/CQues/SwigRunTest/NTH_EVEN_LENGTH_PALINDROME/NTH_EVEN_LENGTH_PALINDROME.txt

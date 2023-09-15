@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 73950 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PAPER_CUT_MINIMUM_NUMBER_SQUARES/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PAPER_CUT_MINIMUM_NUMBER_SQUARES/PAPER_CUT_MINIMUM_NUMBER_SQUARES.js > generator/WrapCQuesTest/CQues/SwigRunTest/PAPER_CUT_MINIMUM_NUMBER_SQUARES/PAPER_CUT_MINIMUM_NUMBER_SQUARES.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52934 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_TRIPLET_SUM_ARRAY_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_TRIPLET_SUM_ARRAY_1/MAXIMUM_TRIPLET_SUM_ARRAY_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_TRIPLET_SUM_ARRAY_1/MAXIMUM_TRIPLET_SUM_ARRAY_1.txt

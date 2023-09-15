@@ -1,0 +1,10 @@
+0
+Triplet is 28, 6, -161
+0
+Triplet is 19, 6, 41
+0
+0
+0
+Triplet is 40, -76, 541
+0
+0

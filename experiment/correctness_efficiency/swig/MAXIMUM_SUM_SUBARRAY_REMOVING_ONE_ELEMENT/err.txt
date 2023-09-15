@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 56331 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_SUBARRAY_REMOVING_ONE_ELEMENT/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_SUBARRAY_REMOVING_ONE_ELEMENT/MAXIMUM_SUM_SUBARRAY_REMOVING_ONE_ELEMENT.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_SUBARRAY_REMOVING_ONE_ELEMENT/MAXIMUM_SUM_SUBARRAY_REMOVING_ONE_ELEMENT.txt

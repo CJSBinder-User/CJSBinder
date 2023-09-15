@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67837 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_CONSECUTIVE_NUMBERS_PRESENT_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_CONSECUTIVE_NUMBERS_PRESENT_ARRAY/MAXIMUM_CONSECUTIVE_NUMBERS_PRESENT_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_CONSECUTIVE_NUMBERS_PRESENT_ARRAY/MAXIMUM_CONSECUTIVE_NUMBERS_PRESENT_ARRAY.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 57620 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_OCCURRENCES_CHARACTER_APPEAR_TOGETHER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_OCCURRENCES_CHARACTER_APPEAR_TOGETHER/CHECK_OCCURRENCES_CHARACTER_APPEAR_TOGETHER.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_OCCURRENCES_CHARACTER_APPEAR_TOGETHER/CHECK_OCCURRENCES_CHARACTER_APPEAR_TOGETHER.txt

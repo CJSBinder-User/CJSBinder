@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58948 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_DISTINCT_OCCURRENCES_AS_A_SUBSEQUENCE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_DISTINCT_OCCURRENCES_AS_A_SUBSEQUENCE/COUNT_DISTINCT_OCCURRENCES_AS_A_SUBSEQUENCE.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_DISTINCT_OCCURRENCES_AS_A_SUBSEQUENCE/COUNT_DISTINCT_OCCURRENCES_AS_A_SUBSEQUENCE.txt

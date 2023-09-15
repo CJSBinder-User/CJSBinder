@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 68568 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/DYCK_PATH/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/DYCK_PATH/DYCK_PATH.js > generator/WrapCQuesTest/CQues/SwigRunTest/DYCK_PATH/DYCK_PATH.txt

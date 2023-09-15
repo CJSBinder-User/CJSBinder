@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 55727 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_MINIMUM_NUMBER_OF_COINS_THAT_MAKE_A_CHANGE_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_MINIMUM_NUMBER_OF_COINS_THAT_MAKE_A_CHANGE_1/FIND_MINIMUM_NUMBER_OF_COINS_THAT_MAKE_A_CHANGE_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_MINIMUM_NUMBER_OF_COINS_THAT_MAKE_A_CHANGE_1/FIND_MINIMUM_NUMBER_OF_COINS_THAT_MAKE_A_CHANGE_1.txt

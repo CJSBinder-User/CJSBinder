@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 51676 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_DAYS_TANK_WILL_BECOME_EMPTY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_DAYS_TANK_WILL_BECOME_EMPTY/NUMBER_DAYS_TANK_WILL_BECOME_EMPTY.js > generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_DAYS_TANK_WILL_BECOME_EMPTY/NUMBER_DAYS_TANK_WILL_BECOME_EMPTY.txt

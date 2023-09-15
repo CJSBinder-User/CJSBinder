@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 56972 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/ONE_LINE_FUNCTION_FOR_FACTORIAL_OF_A_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/ONE_LINE_FUNCTION_FOR_FACTORIAL_OF_A_NUMBER/ONE_LINE_FUNCTION_FOR_FACTORIAL_OF_A_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/ONE_LINE_FUNCTION_FOR_FACTORIAL_OF_A_NUMBER/ONE_LINE_FUNCTION_FOR_FACTORIAL_OF_A_NUMBER.txt

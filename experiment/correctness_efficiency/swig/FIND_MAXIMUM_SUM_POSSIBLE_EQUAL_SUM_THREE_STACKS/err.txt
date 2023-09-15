@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53643 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_MAXIMUM_SUM_POSSIBLE_EQUAL_SUM_THREE_STACKS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_MAXIMUM_SUM_POSSIBLE_EQUAL_SUM_THREE_STACKS/FIND_MAXIMUM_SUM_POSSIBLE_EQUAL_SUM_THREE_STACKS.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_MAXIMUM_SUM_POSSIBLE_EQUAL_SUM_THREE_STACKS/FIND_MAXIMUM_SUM_POSSIBLE_EQUAL_SUM_THREE_STACKS.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52172 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1.txt

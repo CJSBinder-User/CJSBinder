@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67156 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COST_BALANCE_PARANTHESES/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COST_BALANCE_PARANTHESES/COST_BALANCE_PARANTHESES.js > generator/WrapCQuesTest/CQues/SwigRunTest/COST_BALANCE_PARANTHESES/COST_BALANCE_PARANTHESES.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 55427 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_POSSIBLE_WAYS_TO_CONSTRUCT_BUILDINGS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_POSSIBLE_WAYS_TO_CONSTRUCT_BUILDINGS/COUNT_POSSIBLE_WAYS_TO_CONSTRUCT_BUILDINGS.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_POSSIBLE_WAYS_TO_CONSTRUCT_BUILDINGS/COUNT_POSSIBLE_WAYS_TO_CONSTRUCT_BUILDINGS.txt

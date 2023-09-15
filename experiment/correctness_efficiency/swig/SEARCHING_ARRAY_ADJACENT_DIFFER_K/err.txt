@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60227 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SEARCHING_ARRAY_ADJACENT_DIFFER_K/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SEARCHING_ARRAY_ADJACENT_DIFFER_K/SEARCHING_ARRAY_ADJACENT_DIFFER_K.js > generator/WrapCQuesTest/CQues/SwigRunTest/SEARCHING_ARRAY_ADJACENT_DIFFER_K/SEARCHING_ARRAY_ADJACENT_DIFFER_K.txt

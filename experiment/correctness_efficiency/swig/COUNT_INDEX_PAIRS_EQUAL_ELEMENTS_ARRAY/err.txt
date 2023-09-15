@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 65266 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_INDEX_PAIRS_EQUAL_ELEMENTS_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_INDEX_PAIRS_EQUAL_ELEMENTS_ARRAY/COUNT_INDEX_PAIRS_EQUAL_ELEMENTS_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_INDEX_PAIRS_EQUAL_ELEMENTS_ARRAY/COUNT_INDEX_PAIRS_EQUAL_ELEMENTS_ARRAY.txt

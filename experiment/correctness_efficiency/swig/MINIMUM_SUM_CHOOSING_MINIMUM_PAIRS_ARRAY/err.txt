@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 72105 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_SUM_CHOOSING_MINIMUM_PAIRS_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_SUM_CHOOSING_MINIMUM_PAIRS_ARRAY/MINIMUM_SUM_CHOOSING_MINIMUM_PAIRS_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_SUM_CHOOSING_MINIMUM_PAIRS_ARRAY/MINIMUM_SUM_CHOOSING_MINIMUM_PAIRS_ARRAY.txt

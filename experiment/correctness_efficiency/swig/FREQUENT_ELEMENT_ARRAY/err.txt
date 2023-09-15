@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 57740 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FREQUENT_ELEMENT_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FREQUENT_ELEMENT_ARRAY/FREQUENT_ELEMENT_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/FREQUENT_ELEMENT_ARRAY/FREQUENT_ELEMENT_ARRAY.txt

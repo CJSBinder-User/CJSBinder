@@ -1,0 +1,8 @@
+class string;
+template <typename T>
+class vector;
+class MINIMUM_NUMBER_OF_BRACKET_REVERSALS_NEEDED_TO_MAKE_AN_EXPRESSION_BALANCED {
+public:
+    int M_N_O_B_R_N_T_M_A_E_B_f_gold(string expr);
+MINIMUM_NUMBER_OF_BRACKET_REVERSALS_NEEDED_TO_MAKE_AN_EXPRESSION_BALANCED() {}
+};

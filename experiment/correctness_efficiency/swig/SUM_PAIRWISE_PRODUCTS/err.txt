@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 63396 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUM_PAIRWISE_PRODUCTS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUM_PAIRWISE_PRODUCTS/SUM_PAIRWISE_PRODUCTS.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUM_PAIRWISE_PRODUCTS/SUM_PAIRWISE_PRODUCTS.txt

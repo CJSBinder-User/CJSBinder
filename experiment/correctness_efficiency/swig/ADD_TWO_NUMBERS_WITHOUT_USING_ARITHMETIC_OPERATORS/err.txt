@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 71258 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/ADD_TWO_NUMBERS_WITHOUT_USING_ARITHMETIC_OPERATORS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/ADD_TWO_NUMBERS_WITHOUT_USING_ARITHMETIC_OPERATORS/ADD_TWO_NUMBERS_WITHOUT_USING_ARITHMETIC_OPERATORS.js > generator/WrapCQuesTest/CQues/SwigRunTest/ADD_TWO_NUMBERS_WITHOUT_USING_ARITHMETIC_OPERATORS/ADD_TWO_NUMBERS_WITHOUT_USING_ARITHMETIC_OPERATORS.txt

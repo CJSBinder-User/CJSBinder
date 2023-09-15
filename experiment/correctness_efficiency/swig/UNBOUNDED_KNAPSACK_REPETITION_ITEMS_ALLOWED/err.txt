@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58448 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/UNBOUNDED_KNAPSACK_REPETITION_ITEMS_ALLOWED/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/UNBOUNDED_KNAPSACK_REPETITION_ITEMS_ALLOWED/UNBOUNDED_KNAPSACK_REPETITION_ITEMS_ALLOWED.js > generator/WrapCQuesTest/CQues/SwigRunTest/UNBOUNDED_KNAPSACK_REPETITION_ITEMS_ALLOWED/UNBOUNDED_KNAPSACK_REPETITION_ITEMS_ALLOWED.txt

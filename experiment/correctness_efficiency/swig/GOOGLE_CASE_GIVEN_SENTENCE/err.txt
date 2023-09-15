@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60658 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/GOOGLE_CASE_GIVEN_SENTENCE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/GOOGLE_CASE_GIVEN_SENTENCE/GOOGLE_CASE_GIVEN_SENTENCE.js > generator/WrapCQuesTest/CQues/SwigRunTest/GOOGLE_CASE_GIVEN_SENTENCE/GOOGLE_CASE_GIVEN_SENTENCE.txt

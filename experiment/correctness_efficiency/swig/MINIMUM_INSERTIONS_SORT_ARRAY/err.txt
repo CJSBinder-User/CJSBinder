@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 66050 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_INSERTIONS_SORT_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_INSERTIONS_SORT_ARRAY/MINIMUM_INSERTIONS_SORT_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_INSERTIONS_SORT_ARRAY/MINIMUM_INSERTIONS_SORT_ARRAY.txt

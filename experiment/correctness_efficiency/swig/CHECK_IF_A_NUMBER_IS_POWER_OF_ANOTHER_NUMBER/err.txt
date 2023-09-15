@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 63837 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_IF_A_NUMBER_IS_POWER_OF_ANOTHER_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_IF_A_NUMBER_IS_POWER_OF_ANOTHER_NUMBER/CHECK_IF_A_NUMBER_IS_POWER_OF_ANOTHER_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_IF_A_NUMBER_IS_POWER_OF_ANOTHER_NUMBER/CHECK_IF_A_NUMBER_IS_POWER_OF_ANOTHER_NUMBER.txt

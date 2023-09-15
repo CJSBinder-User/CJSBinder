@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 57371 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SQUARED_TRIANGULAR_NUMBER_SUM_CUBES/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SQUARED_TRIANGULAR_NUMBER_SUM_CUBES/SQUARED_TRIANGULAR_NUMBER_SUM_CUBES.js > generator/WrapCQuesTest/CQues/SwigRunTest/SQUARED_TRIANGULAR_NUMBER_SUM_CUBES/SQUARED_TRIANGULAR_NUMBER_SUM_CUBES.txt

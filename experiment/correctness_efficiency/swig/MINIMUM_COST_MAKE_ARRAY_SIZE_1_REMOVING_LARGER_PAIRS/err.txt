@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60566 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_COST_MAKE_ARRAY_SIZE_1_REMOVING_LARGER_PAIRS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_COST_MAKE_ARRAY_SIZE_1_REMOVING_LARGER_PAIRS/MINIMUM_COST_MAKE_ARRAY_SIZE_1_REMOVING_LARGER_PAIRS.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_COST_MAKE_ARRAY_SIZE_1_REMOVING_LARGER_PAIRS/MINIMUM_COST_MAKE_ARRAY_SIZE_1_REMOVING_LARGER_PAIRS.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67745 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_ONE_EXTRA_CHARACTER_STRING_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_ONE_EXTRA_CHARACTER_STRING_1/FIND_ONE_EXTRA_CHARACTER_STRING_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_ONE_EXTRA_CHARACTER_STRING_1/FIND_ONE_EXTRA_CHARACTER_STRING_1.txt

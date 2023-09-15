@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67928 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_SUBSEQUENCES_FORM_AI_BJ_CK/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_SUBSEQUENCES_FORM_AI_BJ_CK/NUMBER_SUBSEQUENCES_FORM_AI_BJ_CK.js > generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_SUBSEQUENCES_FORM_AI_BJ_CK/NUMBER_SUBSEQUENCES_FORM_AI_BJ_CK.txt

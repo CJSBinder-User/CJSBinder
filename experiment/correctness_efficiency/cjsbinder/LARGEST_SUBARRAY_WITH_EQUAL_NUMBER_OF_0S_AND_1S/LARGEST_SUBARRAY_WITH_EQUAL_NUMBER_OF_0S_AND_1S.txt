@@ -1,0 +1,11 @@
+No such subarray-1
+No such subarray-1
+No such subarray-1
+No such subarray-1
+No such subarray-1
+No such subarray-1
+No such subarray-1
+No such subarray-1
+No such subarray-1
+No such subarray-1
+type error!

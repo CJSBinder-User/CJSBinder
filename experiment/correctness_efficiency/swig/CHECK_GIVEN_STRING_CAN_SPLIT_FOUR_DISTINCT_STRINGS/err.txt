@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67553 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_GIVEN_STRING_CAN_SPLIT_FOUR_DISTINCT_STRINGS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_GIVEN_STRING_CAN_SPLIT_FOUR_DISTINCT_STRINGS/CHECK_GIVEN_STRING_CAN_SPLIT_FOUR_DISTINCT_STRINGS.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_GIVEN_STRING_CAN_SPLIT_FOUR_DISTINCT_STRINGS/CHECK_GIVEN_STRING_CAN_SPLIT_FOUR_DISTINCT_STRINGS.txt

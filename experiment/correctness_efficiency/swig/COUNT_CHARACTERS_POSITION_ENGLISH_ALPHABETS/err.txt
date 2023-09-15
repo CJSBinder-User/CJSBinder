@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 68909 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_CHARACTERS_POSITION_ENGLISH_ALPHABETS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_CHARACTERS_POSITION_ENGLISH_ALPHABETS/COUNT_CHARACTERS_POSITION_ENGLISH_ALPHABETS.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_CHARACTERS_POSITION_ENGLISH_ALPHABETS/COUNT_CHARACTERS_POSITION_ENGLISH_ALPHABETS.txt

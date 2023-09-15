@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 56760 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_REPETITIVE_ELEMENT_1_N_1_2/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_REPETITIVE_ELEMENT_1_N_1_2/FIND_REPETITIVE_ELEMENT_1_N_1_2.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_REPETITIVE_ELEMENT_1_N_1_2/FIND_REPETITIVE_ELEMENT_1_N_1_2.txt

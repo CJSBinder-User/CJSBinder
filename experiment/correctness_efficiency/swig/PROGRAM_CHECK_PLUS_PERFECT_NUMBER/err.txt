@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 59008 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CHECK_PLUS_PERFECT_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CHECK_PLUS_PERFECT_NUMBER/PROGRAM_CHECK_PLUS_PERFECT_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CHECK_PLUS_PERFECT_NUMBER/PROGRAM_CHECK_PLUS_PERFECT_NUMBER.txt

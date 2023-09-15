@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 55909 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_WORDS_APPEAR_EXACTLY_TWO_TIMES_ARRAY_WORDS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_WORDS_APPEAR_EXACTLY_TWO_TIMES_ARRAY_WORDS/COUNT_WORDS_APPEAR_EXACTLY_TWO_TIMES_ARRAY_WORDS.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_WORDS_APPEAR_EXACTLY_TWO_TIMES_ARRAY_WORDS/COUNT_WORDS_APPEAR_EXACTLY_TWO_TIMES_ARRAY_WORDS.txt

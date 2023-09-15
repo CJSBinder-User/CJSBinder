@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 56120 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUM_K_TH_GROUP_ODD_POSITIVE_NUMBERS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUM_K_TH_GROUP_ODD_POSITIVE_NUMBERS/SUM_K_TH_GROUP_ODD_POSITIVE_NUMBERS.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUM_K_TH_GROUP_ODD_POSITIVE_NUMBERS/SUM_K_TH_GROUP_ODD_POSITIVE_NUMBERS.txt

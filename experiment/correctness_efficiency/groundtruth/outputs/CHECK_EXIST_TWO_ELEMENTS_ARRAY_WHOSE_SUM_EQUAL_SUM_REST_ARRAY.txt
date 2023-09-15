@@ -1,0 +1,13 @@
+Pair elements are 4 and 11
+1
+0
+Pair elements are 1 and 0
+1
+0
+0
+0
+0
+0
+Pair elements are 0 and 0
+1
+0

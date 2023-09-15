@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52597 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NTH_PENTAGONAL_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NTH_PENTAGONAL_NUMBER/NTH_PENTAGONAL_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/NTH_PENTAGONAL_NUMBER/NTH_PENTAGONAL_NUMBER.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53703 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUM_BINOMIAL_COEFFICIENTS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUM_BINOMIAL_COEFFICIENTS/SUM_BINOMIAL_COEFFICIENTS.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUM_BINOMIAL_COEFFICIENTS/SUM_BINOMIAL_COEFFICIENTS.txt

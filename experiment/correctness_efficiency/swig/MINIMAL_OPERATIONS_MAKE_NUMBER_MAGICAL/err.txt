@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 51706 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMAL_OPERATIONS_MAKE_NUMBER_MAGICAL/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMAL_OPERATIONS_MAKE_NUMBER_MAGICAL/MINIMAL_OPERATIONS_MAKE_NUMBER_MAGICAL.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMAL_OPERATIONS_MAKE_NUMBER_MAGICAL/MINIMAL_OPERATIONS_MAKE_NUMBER_MAGICAL.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 59619 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_XOR_VALUE_PAIR_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_XOR_VALUE_PAIR_1/MINIMUM_XOR_VALUE_PAIR_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_XOR_VALUE_PAIR_1/MINIMUM_XOR_VALUE_PAIR_1.txt

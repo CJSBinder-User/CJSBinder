@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 71715 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_EQUAL_POINT_STRING_BRACKETS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_EQUAL_POINT_STRING_BRACKETS/FIND_EQUAL_POINT_STRING_BRACKETS.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_EQUAL_POINT_STRING_BRACKETS/FIND_EQUAL_POINT_STRING_BRACKETS.txt

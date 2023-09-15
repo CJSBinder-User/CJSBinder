@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 56361 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_N_TH_ELEMENT_FROM_STERNS_DIATOMIC_SERIES/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_N_TH_ELEMENT_FROM_STERNS_DIATOMIC_SERIES/FIND_N_TH_ELEMENT_FROM_STERNS_DIATOMIC_SERIES.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_N_TH_ELEMENT_FROM_STERNS_DIATOMIC_SERIES/FIND_N_TH_ELEMENT_FROM_STERNS_DIATOMIC_SERIES.txt

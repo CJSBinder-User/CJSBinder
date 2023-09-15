@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 59439 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FORM_SMALLEST_NUMBER_USING_ONE_SWAP_OPERATION/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FORM_SMALLEST_NUMBER_USING_ONE_SWAP_OPERATION/FORM_SMALLEST_NUMBER_USING_ONE_SWAP_OPERATION.js > generator/WrapCQuesTest/CQues/SwigRunTest/FORM_SMALLEST_NUMBER_USING_ONE_SWAP_OPERATION/FORM_SMALLEST_NUMBER_USING_ONE_SWAP_OPERATION.txt

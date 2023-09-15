@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52748 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_RECTANGLES_NM_GRID/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_RECTANGLES_NM_GRID/NUMBER_RECTANGLES_NM_GRID.js > generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_RECTANGLES_NM_GRID/NUMBER_RECTANGLES_NM_GRID.txt

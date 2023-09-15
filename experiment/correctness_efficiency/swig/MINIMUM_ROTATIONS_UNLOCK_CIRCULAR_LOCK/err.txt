@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 56942 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_ROTATIONS_UNLOCK_CIRCULAR_LOCK/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_ROTATIONS_UNLOCK_CIRCULAR_LOCK/MINIMUM_ROTATIONS_UNLOCK_CIRCULAR_LOCK.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_ROTATIONS_UNLOCK_CIRCULAR_LOCK/MINIMUM_ROTATIONS_UNLOCK_CIRCULAR_LOCK.txt

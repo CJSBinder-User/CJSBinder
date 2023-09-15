@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 59168 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NEXT_POWER_OF_2_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NEXT_POWER_OF_2_1/NEXT_POWER_OF_2_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/NEXT_POWER_OF_2_1/NEXT_POWER_OF_2_1.txt

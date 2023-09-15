@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 66800 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PRIMALITY_TEST_SET_1_INTRODUCTION_AND_SCHOOL_METHOD/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PRIMALITY_TEST_SET_1_INTRODUCTION_AND_SCHOOL_METHOD/PRIMALITY_TEST_SET_1_INTRODUCTION_AND_SCHOOL_METHOD.js > generator/WrapCQuesTest/CQues/SwigRunTest/PRIMALITY_TEST_SET_1_INTRODUCTION_AND_SCHOOL_METHOD/PRIMALITY_TEST_SET_1_INTRODUCTION_AND_SCHOOL_METHOD.txt

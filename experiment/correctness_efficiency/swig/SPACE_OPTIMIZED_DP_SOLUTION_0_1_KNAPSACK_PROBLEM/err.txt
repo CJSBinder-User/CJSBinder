@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53114 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SPACE_OPTIMIZED_DP_SOLUTION_0_1_KNAPSACK_PROBLEM/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SPACE_OPTIMIZED_DP_SOLUTION_0_1_KNAPSACK_PROBLEM/SPACE_OPTIMIZED_DP_SOLUTION_0_1_KNAPSACK_PROBLEM.js > generator/WrapCQuesTest/CQues/SwigRunTest/SPACE_OPTIMIZED_DP_SOLUTION_0_1_KNAPSACK_PROBLEM/SPACE_OPTIMIZED_DP_SOLUTION_0_1_KNAPSACK_PROBLEM.txt

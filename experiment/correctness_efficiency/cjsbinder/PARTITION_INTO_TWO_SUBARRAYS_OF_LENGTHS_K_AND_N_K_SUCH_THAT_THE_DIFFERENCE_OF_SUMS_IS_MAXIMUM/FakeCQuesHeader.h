@@ -1,0 +1,8 @@
+class string;
+template <typename T>
+class vector;
+class PARTITION_INTO_TWO_SUBARRAYS_OF_LENGTHS_K_AND_N_K_SUCH_THAT_THE_DIFFERENCE_OF_SUMS_IS_MAXIMUM {
+public:
+    int P_I_T_S_O_L_K_A_N_K_S_T_T_D_O_S_I_M_f_gold(int arr [], int N, int k);
+PARTITION_INTO_TWO_SUBARRAYS_OF_LENGTHS_K_AND_N_K_SUCH_THAT_THE_DIFFERENCE_OF_SUMS_IS_MAXIMUM() {}
+};

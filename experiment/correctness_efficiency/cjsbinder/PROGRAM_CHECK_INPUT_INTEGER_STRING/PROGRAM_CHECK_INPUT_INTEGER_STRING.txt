@@ -1,0 +1,11 @@
+false
+true
+true
+false
+true
+true
+false
+true
+true
+false
+type error!

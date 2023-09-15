@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53326 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FRIENDS_PAIRING_PROBLEM/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FRIENDS_PAIRING_PROBLEM/FRIENDS_PAIRING_PROBLEM.js > generator/WrapCQuesTest/CQues/SwigRunTest/FRIENDS_PAIRING_PROBLEM/FRIENDS_PAIRING_PROBLEM.txt

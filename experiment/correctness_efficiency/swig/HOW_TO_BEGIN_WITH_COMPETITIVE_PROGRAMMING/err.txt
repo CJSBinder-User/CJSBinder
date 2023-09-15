@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60292 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/HOW_TO_BEGIN_WITH_COMPETITIVE_PROGRAMMING/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/HOW_TO_BEGIN_WITH_COMPETITIVE_PROGRAMMING/HOW_TO_BEGIN_WITH_COMPETITIVE_PROGRAMMING.js > generator/WrapCQuesTest/CQues/SwigRunTest/HOW_TO_BEGIN_WITH_COMPETITIVE_PROGRAMMING/HOW_TO_BEGIN_WITH_COMPETITIVE_PROGRAMMING.txt

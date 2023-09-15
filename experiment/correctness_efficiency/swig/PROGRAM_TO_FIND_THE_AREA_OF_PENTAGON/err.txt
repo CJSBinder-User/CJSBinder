@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 61091 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_TO_FIND_THE_AREA_OF_PENTAGON/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_TO_FIND_THE_AREA_OF_PENTAGON/PROGRAM_TO_FIND_THE_AREA_OF_PENTAGON.js > generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_TO_FIND_THE_AREA_OF_PENTAGON/PROGRAM_TO_FIND_THE_AREA_OF_PENTAGON.txt

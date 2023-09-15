@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 66020 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/QUERIES_COUNTS_ARRAY_ELEMENTS_VALUES_GIVEN_RANGE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/QUERIES_COUNTS_ARRAY_ELEMENTS_VALUES_GIVEN_RANGE/QUERIES_COUNTS_ARRAY_ELEMENTS_VALUES_GIVEN_RANGE.js > generator/WrapCQuesTest/CQues/SwigRunTest/QUERIES_COUNTS_ARRAY_ELEMENTS_VALUES_GIVEN_RANGE/QUERIES_COUNTS_ARRAY_ELEMENTS_VALUES_GIVEN_RANGE.txt

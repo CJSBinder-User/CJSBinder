@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 65808 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUBSET_SUM_PROBLEM_OSUM_SPACE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUBSET_SUM_PROBLEM_OSUM_SPACE/SUBSET_SUM_PROBLEM_OSUM_SPACE.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUBSET_SUM_PROBLEM_OSUM_SPACE/SUBSET_SUM_PROBLEM_OSUM_SPACE.txt

@@ -1,0 +1,8 @@
+class string;
+template <typename T>
+class vector;
+class ZECKENDORFS_THEOREM_NON_NEIGHBOURING_FIBONACCI_REPRESENTATION {
+public:
+    int Z_T_N_N_F_R_f_gold(int n);
+ZECKENDORFS_THEOREM_NON_NEIGHBOURING_FIBONACCI_REPRESENTATION() {}
+};

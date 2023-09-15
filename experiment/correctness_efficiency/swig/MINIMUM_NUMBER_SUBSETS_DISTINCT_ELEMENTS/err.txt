@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 66877 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_NUMBER_SUBSETS_DISTINCT_ELEMENTS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_NUMBER_SUBSETS_DISTINCT_ELEMENTS/MINIMUM_NUMBER_SUBSETS_DISTINCT_ELEMENTS.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_NUMBER_SUBSETS_DISTINCT_ELEMENTS/MINIMUM_NUMBER_SUBSETS_DISTINCT_ELEMENTS.txt

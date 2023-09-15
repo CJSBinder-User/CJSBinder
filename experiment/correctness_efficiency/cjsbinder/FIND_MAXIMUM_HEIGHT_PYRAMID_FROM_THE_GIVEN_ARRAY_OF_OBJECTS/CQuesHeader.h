@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+class FIND_MAXIMUM_HEIGHT_PYRAMID_FROM_THE_GIVEN_ARRAY_OF_OBJECTS {
+public:
+    int F_M_H_P_F_T_G_A_O_O_f_gold(int boxes [], int n)
+    { 
+        sort ( boxes , boxes + n ) ; 
+        int ans = 1 ; 
+        int prev_width = boxes [ 0 ] ; 
+        int prev_count = 1 ; 
+        int curr_count = 0 ; 
+        int curr_width = 0 ; 
+        for ( int i = 1 ; 
+        i < n ; 
+        i ++ ) { 
+            curr_width += boxes [ i ] ; 
+            curr_count += 1 ; 
+            if ( curr_width > prev_width && curr_count > prev_count ) { 
+                prev_width = curr_width ; 
+                prev_count = curr_count ; 
+                curr_count = 0 ; 
+                curr_width = 0 ; 
+                ans ++ ; 
+            } 
+        } 
+        return ans ; 
+    } 
+FIND_MAXIMUM_HEIGHT_PYRAMID_FROM_THE_GIVEN_ARRAY_OF_OBJECTS() {}
+};

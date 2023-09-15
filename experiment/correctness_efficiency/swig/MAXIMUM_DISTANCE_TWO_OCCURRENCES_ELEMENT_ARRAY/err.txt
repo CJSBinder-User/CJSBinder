@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58705 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_DISTANCE_TWO_OCCURRENCES_ELEMENT_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_DISTANCE_TWO_OCCURRENCES_ELEMENT_ARRAY/MAXIMUM_DISTANCE_TWO_OCCURRENCES_ELEMENT_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_DISTANCE_TWO_OCCURRENCES_ELEMENT_ARRAY/MAXIMUM_DISTANCE_TWO_OCCURRENCES_ELEMENT_ARRAY.txt

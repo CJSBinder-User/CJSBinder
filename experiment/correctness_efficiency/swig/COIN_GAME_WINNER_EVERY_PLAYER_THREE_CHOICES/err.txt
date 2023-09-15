@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 62474 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COIN_GAME_WINNER_EVERY_PLAYER_THREE_CHOICES/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COIN_GAME_WINNER_EVERY_PLAYER_THREE_CHOICES/COIN_GAME_WINNER_EVERY_PLAYER_THREE_CHOICES.js > generator/WrapCQuesTest/CQues/SwigRunTest/COIN_GAME_WINNER_EVERY_PLAYER_THREE_CHOICES/COIN_GAME_WINNER_EVERY_PLAYER_THREE_CHOICES.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 57214 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNTING_PAIRS_PERSON_CAN_FORM_PAIR_ONE_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNTING_PAIRS_PERSON_CAN_FORM_PAIR_ONE_1/COUNTING_PAIRS_PERSON_CAN_FORM_PAIR_ONE_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNTING_PAIRS_PERSON_CAN_FORM_PAIR_ONE_1/COUNTING_PAIRS_PERSON_CAN_FORM_PAIR_ONE_1.txt

@@ -1,0 +1,8 @@
+class string;
+template <typename T>
+class vector;
+class MINIMUM_STEPS_TO_DELETE_A_STRING_AFTER_REPEATED_DELETION_OF_PALINDROME_SUBSTRINGS {
+public:
+    int M_S_T_D_A_S_A_R_D_O_P_S_f_gold(string str);
+MINIMUM_STEPS_TO_DELETE_A_STRING_AFTER_REPEATED_DELETION_OF_PALINDROME_SUBSTRINGS() {}
+};

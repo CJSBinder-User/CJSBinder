@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67715 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_SUM_OF_ALL_NUMBERS_PRESENT_IN_A_STRING/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_SUM_OF_ALL_NUMBERS_PRESENT_IN_A_STRING/CALCULATE_SUM_OF_ALL_NUMBERS_PRESENT_IN_A_STRING.js > generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_SUM_OF_ALL_NUMBERS_PRESENT_IN_A_STRING/CALCULATE_SUM_OF_ALL_NUMBERS_PRESENT_IN_A_STRING.txt

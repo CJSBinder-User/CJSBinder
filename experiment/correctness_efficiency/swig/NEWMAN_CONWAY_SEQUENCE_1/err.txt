@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 69128 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NEWMAN_CONWAY_SEQUENCE_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NEWMAN_CONWAY_SEQUENCE_1/NEWMAN_CONWAY_SEQUENCE_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/NEWMAN_CONWAY_SEQUENCE_1/NEWMAN_CONWAY_SEQUENCE_1.txt

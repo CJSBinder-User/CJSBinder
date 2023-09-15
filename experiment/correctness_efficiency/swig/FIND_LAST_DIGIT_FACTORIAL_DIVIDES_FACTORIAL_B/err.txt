@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 74072 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_LAST_DIGIT_FACTORIAL_DIVIDES_FACTORIAL_B/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_LAST_DIGIT_FACTORIAL_DIVIDES_FACTORIAL_B/FIND_LAST_DIGIT_FACTORIAL_DIVIDES_FACTORIAL_B.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_LAST_DIGIT_FACTORIAL_DIVIDES_FACTORIAL_B/FIND_LAST_DIGIT_FACTORIAL_DIVIDES_FACTORIAL_B.txt

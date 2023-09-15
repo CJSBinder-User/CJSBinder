@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 72437 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUM_DIVISORS_1_N_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUM_DIVISORS_1_N_1/SUM_DIVISORS_1_N_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUM_DIVISORS_1_N_1/SUM_DIVISORS_1_N_1.txt

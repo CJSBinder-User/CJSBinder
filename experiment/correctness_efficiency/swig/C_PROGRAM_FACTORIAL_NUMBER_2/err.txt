@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 73980 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/C_PROGRAM_FACTORIAL_NUMBER_2/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/C_PROGRAM_FACTORIAL_NUMBER_2/C_PROGRAM_FACTORIAL_NUMBER_2.js > generator/WrapCQuesTest/CQues/SwigRunTest/C_PROGRAM_FACTORIAL_NUMBER_2/C_PROGRAM_FACTORIAL_NUMBER_2.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67463 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_SUM_TWO_NUMBERS_FORMED_DIGITS_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_SUM_TWO_NUMBERS_FORMED_DIGITS_ARRAY/MINIMUM_SUM_TWO_NUMBERS_FORMED_DIGITS_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_SUM_TWO_NUMBERS_FORMED_DIGITS_ARRAY/MINIMUM_SUM_TWO_NUMBERS_FORMED_DIGITS_ARRAY.txt

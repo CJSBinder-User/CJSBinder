@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53885 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CALCULATE_VOLUME_ELLIPSOID/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CALCULATE_VOLUME_ELLIPSOID/PROGRAM_CALCULATE_VOLUME_ELLIPSOID.js > generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CALCULATE_VOLUME_ELLIPSOID/PROGRAM_CALCULATE_VOLUME_ELLIPSOID.txt

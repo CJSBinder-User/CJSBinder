@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60044 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PYTHAGOREAN_QUADRUPLE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PYTHAGOREAN_QUADRUPLE/PYTHAGOREAN_QUADRUPLE.js > generator/WrapCQuesTest/CQues/SwigRunTest/PYTHAGOREAN_QUADRUPLE/PYTHAGOREAN_QUADRUPLE.txt

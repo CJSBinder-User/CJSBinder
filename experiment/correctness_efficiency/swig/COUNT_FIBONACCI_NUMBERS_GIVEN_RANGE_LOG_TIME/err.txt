@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53915 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_FIBONACCI_NUMBERS_GIVEN_RANGE_LOG_TIME/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_FIBONACCI_NUMBERS_GIVEN_RANGE_LOG_TIME/COUNT_FIBONACCI_NUMBERS_GIVEN_RANGE_LOG_TIME.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_FIBONACCI_NUMBERS_GIVEN_RANGE_LOG_TIME/COUNT_FIBONACCI_NUMBERS_GIVEN_RANGE_LOG_TIME.txt

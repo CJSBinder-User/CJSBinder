@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 68759 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FINDING_POWER_PRIME_NUMBER_P_N_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FINDING_POWER_PRIME_NUMBER_P_N_1/FINDING_POWER_PRIME_NUMBER_P_N_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/FINDING_POWER_PRIME_NUMBER_P_N_1/FINDING_POWER_PRIME_NUMBER_P_N_1.txt

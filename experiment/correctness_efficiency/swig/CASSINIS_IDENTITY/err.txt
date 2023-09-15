@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 63805 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CASSINIS_IDENTITY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CASSINIS_IDENTITY/CASSINIS_IDENTITY.js > generator/WrapCQuesTest/CQues/SwigRunTest/CASSINIS_IDENTITY/CASSINIS_IDENTITY.txt

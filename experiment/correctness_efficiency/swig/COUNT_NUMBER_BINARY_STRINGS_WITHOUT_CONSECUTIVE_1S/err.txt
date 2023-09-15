@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 73404 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBER_BINARY_STRINGS_WITHOUT_CONSECUTIVE_1S/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBER_BINARY_STRINGS_WITHOUT_CONSECUTIVE_1S/COUNT_NUMBER_BINARY_STRINGS_WITHOUT_CONSECUTIVE_1S.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBER_BINARY_STRINGS_WITHOUT_CONSECUTIVE_1S/COUNT_NUMBER_BINARY_STRINGS_WITHOUT_CONSECUTIVE_1S.txt

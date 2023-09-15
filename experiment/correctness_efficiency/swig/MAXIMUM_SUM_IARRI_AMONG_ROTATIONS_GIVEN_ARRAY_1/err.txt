@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 71318 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_IARRI_AMONG_ROTATIONS_GIVEN_ARRAY_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_IARRI_AMONG_ROTATIONS_GIVEN_ARRAY_1/MAXIMUM_SUM_IARRI_AMONG_ROTATIONS_GIVEN_ARRAY_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_IARRI_AMONG_ROTATIONS_GIVEN_ARRAY_1/MAXIMUM_SUM_IARRI_AMONG_ROTATIONS_GIVEN_ARRAY_1.txt

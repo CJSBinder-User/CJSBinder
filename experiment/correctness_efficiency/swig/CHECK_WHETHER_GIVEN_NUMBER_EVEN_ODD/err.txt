@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53265 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_WHETHER_GIVEN_NUMBER_EVEN_ODD/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_WHETHER_GIVEN_NUMBER_EVEN_ODD/CHECK_WHETHER_GIVEN_NUMBER_EVEN_ODD.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_WHETHER_GIVEN_NUMBER_EVEN_ODD/CHECK_WHETHER_GIVEN_NUMBER_EVEN_ODD.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 57860 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_ROTATIONS_DIVISIBLE_4/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_ROTATIONS_DIVISIBLE_4/COUNT_ROTATIONS_DIVISIBLE_4.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_ROTATIONS_DIVISIBLE_4/COUNT_ROTATIONS_DIVISIBLE_4.txt

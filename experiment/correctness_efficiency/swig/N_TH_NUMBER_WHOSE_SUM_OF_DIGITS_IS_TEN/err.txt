@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52477 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/N_TH_NUMBER_WHOSE_SUM_OF_DIGITS_IS_TEN/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/N_TH_NUMBER_WHOSE_SUM_OF_DIGITS_IS_TEN/N_TH_NUMBER_WHOSE_SUM_OF_DIGITS_IS_TEN.js > generator/WrapCQuesTest/CQues/SwigRunTest/N_TH_NUMBER_WHOSE_SUM_OF_DIGITS_IS_TEN/N_TH_NUMBER_WHOSE_SUM_OF_DIGITS_IS_TEN.txt

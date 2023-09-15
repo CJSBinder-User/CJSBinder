@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 61458 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUBSTRINGS_WITH_SAME_FIRST_AND_LAST_CHARACTERS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUBSTRINGS_WITH_SAME_FIRST_AND_LAST_CHARACTERS/COUNT_SUBSTRINGS_WITH_SAME_FIRST_AND_LAST_CHARACTERS.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUBSTRINGS_WITH_SAME_FIRST_AND_LAST_CHARACTERS/COUNT_SUBSTRINGS_WITH_SAME_FIRST_AND_LAST_CHARACTERS.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 54520 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_UNIT_DIGIT_X_RAISED_POWER_Y/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_UNIT_DIGIT_X_RAISED_POWER_Y/FIND_UNIT_DIGIT_X_RAISED_POWER_Y.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_UNIT_DIGIT_X_RAISED_POWER_Y/FIND_UNIT_DIGIT_X_RAISED_POWER_Y.txt

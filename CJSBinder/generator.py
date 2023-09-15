@@ -114,6 +114,7 @@ class V8Json:
         paralist = paralist.split(",")
         for i in range(0,len(paralist)):
             paralist[i] = paralist[i].replace("@",",")
+        #print(apiname)
         for ele in self.ApiDict["content"]:
             if ele["setname"] == apiname: 
                 apidict = ele
@@ -177,7 +178,7 @@ class V8Json:
         clafterrout = []
         clafterapi = []
         finalcl = []
-        #bgtime = time.process_time()
+        bgtime = time.process_time()
         for (line,tab) in codelist:
             oriline = line
             lines = self.parseRoutine(line)
@@ -211,10 +212,10 @@ class V8Json:
             line = self.parseConstName(line)
             line = self.parseIntermediateName(line)
             finalcl.append((line,tab))
-        #edtime = time.process_time()
-        #cost = (edtime-bgtime)*1000
+        edtime = time.process_time()
+        interpcost = (edtime-bgtime)*1000
         #print("interpretation cost:%fms"%(cost))
-        return finalcl
+        return finalcl,interpcost
     
 class CodeList:
     tab = 0
@@ -244,12 +245,15 @@ class V8Glue:
     def __init__(self,jsonfn,hfn):
         self.cl = CodeList()
         self.funccostdic = {}
+        self.funclengthdic = {}
+        self.constcost = -1
+        self.constlength = -1
         self.v8json = V8Json(jsonfn)
         self.cparser = CParser(0)
-        self.starttime = time.process_time()
+        #self.starttime = time.process_time()
         self.cparser.parseSingle(hfn)
-        self.fakeheaderparsetime = time.process_time()
-        print("fake header parse time:%fms" % ((self.fakeheaderparsetime-self.starttime)*1000))
+        #self.fakeheaderparsetime = time.process_time()
+        #print("fake header parse time:%fms" % ((self.fakeheaderparsetime-self.starttime)*1000))
         self.funcdict = self.cparser.funcdict
         self.classdict = self.cparser.classdict
         self.patternlist = self.v8json.findModule("Pattern")["content"]
@@ -341,8 +345,8 @@ class V8Glue:
             respat.append(self.v8json.parseContext(pat[i]))
         self.pattern2Code(respat)
     def proxyConstructorGenerator(self,pt,constdict,context):
-        sttime = time.process_time()
-        initleng = self.cl.getLength()
+        #sttime = time.process_time()
+        begleng = self.cl.getLength()
         self.v8json.context = context
         self.pattern2CodeParseContext([pt["funcsignature"]])
         self.enterScope()
@@ -356,9 +360,11 @@ class V8Glue:
         self.cl.append(proxycode)
         self.pattern2CodeParseContext(pt["content"])
         self.exitScope()
-        edtime = time.process_time()
+        #edtime = time.process_time()
+        endlength = self.cl.getLength()
         #self.funccostdic[funcname] = (edtime-sttime)*1000
-        self.constcost = (edtime-sttime)*1000
+        #self.constcost = (edtime-sttime)*1000
+        self.constlength = endlength - begleng
         #print("constructor const:%fms" % ((edtime-sttime)*1000))
     def getJSArgLength(self,pt,func):
         count = 0
@@ -395,7 +401,7 @@ class V8Glue:
                 proxyarglist.append(self.v8json.parseContext(specialname))
                 continue
             if self.checkJS2CAPI(js2ccontext.cargtype) == False:
-                proxyarglist.append("")
+                #proxyarglist.append("")
                 continue
             self.v8json.context = js2ccontext
             self.pattern2CodeParseContext(pt["js2c"])
@@ -448,13 +454,13 @@ class V8Glue:
         return proxycode
     def proxyFuncGenerator(self,pt,funcs,context):
         for func in funcs:
-            sttime = time.process_time()
-            initleng = self.cl.getLength()
+            #sttime = time.process_time()
+            begleng = self.cl.getLength()
             funcname = func["funcname"]
             context.cfuncname = func["funcname"]
             context.crestype = func["restype"]
+            context.jsarglength = str(self.getJSArgLength(pt,func))
             self.v8json.context = context
-
             self.pattern2CodeParseContext([pt["funcsignature"]])
             self.enterScope()
             self.pattern2CodeParseContext(pt["context"])
@@ -471,8 +477,9 @@ class V8Glue:
                     self.pattern2CodeParseContext(pt["voidhandle"])
             self.exitScope()
             endlength = self.cl.getLength()
-            edtime = time.process_time()
-            self.funccostdic[funcname] = (edtime-sttime)*1000
+            #edtime = time.process_time()
+            #self.funccostdic[funcname] = (edtime-sttime)*1000
+            self.funclengthdic[funcname] = endlength - begleng
     def proxyFuncGene(self):
         pt = self.findPattern("FUNCPROXY")
         for (hfilename,funcs) in self.funcdict.items():
@@ -522,36 +529,26 @@ class V8Glue:
         pat = self.findPattern("CLASSGLUE")
         bept = pat["begin"]
         fcpt = pat["funcglue"]
+        lenfcpt = len(fcpt)
         #fiept = pat["fieldglue"]
         edpt = pat["end"]
         for (hfilename,classes) in self.classdict.items():
             for clas in classes:
                 ct = Context()
-                bgtime = time.process_time()  
                 ct.cclassname = clas["name"]
                 self.v8json.context = ct
                 cttemp = ct
                 self.pattern2CodeParseContext(bept)
-                edtime = time.process_time()
-                t0 = (edtime-bgtime) * 1000
                 for func in clas["funclist"]:
-                    bgtime = time.process_time()
+                    #bgtime = time.process_time()
                     ct.cfuncname = func["funcname"]
                     self.v8json.context = ct
                     self.pattern2CodeParseContext(fcpt)
-                    edtime = time.process_time()
-                    self.funccostdic[ct.cfuncname] = self.funccostdic[ct.cfuncname] + (edtime-bgtime)*1000
+                    #edtime = time.process_time()
+                    #self.funccostdic[ct.cfuncname] = self.funccostdic[ct.cfuncname] + (edtime-bgtime)*1000
+                    self.funclengthdic[ct.cfuncname] = self.funclengthdic[ct.cfuncname] + lenfcpt
                 self.v8json.context = cttemp
-                bgtime = time.process_time()
                 self.pattern2CodeParseContext(edpt)
-                edtime = time.process_time()
-                t1 = (edtime-bgtime)*1000
-
-                if clas.get("constructor") != None:
-                    print("constructor cost:%fms" % (self.constcost+t0+t1))
-                for (name,cost) in self.funccostdic.items():
-                    print("%s cost:%fms" % (name,cost+t0+t1))
-
                 self.cl.append("")
                 
         self.cl.removeLast()
@@ -566,7 +563,8 @@ class V8Glue:
         #self.exitScope()
     def codeGene(self):
         #self.userInclude()
-        #self.cl.extend(self.findPattern("GLOBALCONTEXT"))
+        if self.findPattern("GLOBALENV") != None:
+            self.cl.extend(self.findPattern("GLOBALENV"))
         #self.proxyFuncGene()
         self.proxyClassGene()
         #self.cl.append("int main()")
@@ -575,7 +573,13 @@ class V8Glue:
         #print(self.cl.lis)
         #writeCode("gluemoto.cpp",self.cl.lis)
         totallength = self.cl.getLength()
-        cl =  self.v8json.parseCodeList(self.cl.lis)
+        cl,interpc =  self.v8json.parseCodeList(self.cl.lis)
+        '''
+        if self.constlength != -1:
+            print("constructor cost:%fms" % (self.constcost + interpc * self.constlength / totallength))
+        for (name,cost) in self.funccostdic.items():
+            print("%s cost:%fms" % (name,cost + interpc * self.funclengthdic[name] / totallength))
+        '''
         return cl
 def writeCode(fn,lis):
     with open(fn,"w",encoding='UTF-8') as f:
@@ -599,10 +603,11 @@ def _parse_option():
             options_dict["output"] = arg
     return options_dict
 if __name__ == "__main__":   
+    starttime = time.process_time()
     optdict = _parse_option()
     v8 = V8Glue(optdict["patternfile"],optdict["headfile"])
     code = v8.codeGene()
     writeCode(optdict["output"],code)
     endtime = time.process_time()
-    totaltime = endtime - v8.starttime
+    totaltime = endtime - starttime
     print("total cost:%fms" % (totaltime*1000))

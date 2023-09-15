@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 71502 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PANGRAM_CHECKING/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PANGRAM_CHECKING/PANGRAM_CHECKING.js > generator/WrapCQuesTest/CQues/SwigRunTest/PANGRAM_CHECKING/PANGRAM_CHECKING.txt

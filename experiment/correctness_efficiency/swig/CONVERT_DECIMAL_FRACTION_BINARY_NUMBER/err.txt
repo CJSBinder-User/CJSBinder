@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 70893 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CONVERT_DECIMAL_FRACTION_BINARY_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CONVERT_DECIMAL_FRACTION_BINARY_NUMBER/CONVERT_DECIMAL_FRACTION_BINARY_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/CONVERT_DECIMAL_FRACTION_BINARY_NUMBER/CONVERT_DECIMAL_FRACTION_BINARY_NUMBER.txt

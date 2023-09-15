@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 73824 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CALCULATE_AREA_OCTAGON/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CALCULATE_AREA_OCTAGON/PROGRAM_CALCULATE_AREA_OCTAGON.js > generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_CALCULATE_AREA_OCTAGON/PROGRAM_CALCULATE_AREA_OCTAGON.txt

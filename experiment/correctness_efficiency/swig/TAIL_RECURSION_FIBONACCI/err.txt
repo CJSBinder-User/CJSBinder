@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 68050 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/TAIL_RECURSION_FIBONACCI/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/TAIL_RECURSION_FIBONACCI/TAIL_RECURSION_FIBONACCI.js > generator/WrapCQuesTest/CQues/SwigRunTest/TAIL_RECURSION_FIBONACCI/TAIL_RECURSION_FIBONACCI.txt

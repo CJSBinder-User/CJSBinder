@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 51860 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/K_TH_DIGIT_RAISED_POWER_B/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/K_TH_DIGIT_RAISED_POWER_B/K_TH_DIGIT_RAISED_POWER_B.js > generator/WrapCQuesTest/CQues/SwigRunTest/K_TH_DIGIT_RAISED_POWER_B/K_TH_DIGIT_RAISED_POWER_B.txt

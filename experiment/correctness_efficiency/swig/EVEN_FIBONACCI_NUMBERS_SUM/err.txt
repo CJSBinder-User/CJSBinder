@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 53764 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/EVEN_FIBONACCI_NUMBERS_SUM/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/EVEN_FIBONACCI_NUMBERS_SUM/EVEN_FIBONACCI_NUMBERS_SUM.js > generator/WrapCQuesTest/CQues/SwigRunTest/EVEN_FIBONACCI_NUMBERS_SUM/EVEN_FIBONACCI_NUMBERS_SUM.txt

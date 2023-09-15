@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 54580 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/FIND_A_ROTATION_WITH_MAXIMUM_HAMMING_DISTANCE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/FIND_A_ROTATION_WITH_MAXIMUM_HAMMING_DISTANCE/FIND_A_ROTATION_WITH_MAXIMUM_HAMMING_DISTANCE.js > generator/WrapCQuesTest/CQues/SwigRunTest/FIND_A_ROTATION_WITH_MAXIMUM_HAMMING_DISTANCE/FIND_A_ROTATION_WITH_MAXIMUM_HAMMING_DISTANCE.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 68661 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COMPOSITE_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COMPOSITE_NUMBER/COMPOSITE_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/COMPOSITE_NUMBER/COMPOSITE_NUMBER.txt

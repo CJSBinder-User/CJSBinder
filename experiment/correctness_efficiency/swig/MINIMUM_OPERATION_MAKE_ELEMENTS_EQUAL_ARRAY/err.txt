@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67433 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_OPERATION_MAKE_ELEMENTS_EQUAL_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_OPERATION_MAKE_ELEMENTS_EQUAL_ARRAY/MINIMUM_OPERATION_MAKE_ELEMENTS_EQUAL_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/MINIMUM_OPERATION_MAKE_ELEMENTS_EQUAL_ARRAY/MINIMUM_OPERATION_MAKE_ELEMENTS_EQUAL_ARRAY.txt

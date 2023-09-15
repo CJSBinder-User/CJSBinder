@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 63591 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_LINE_PASSES_ORIGIN/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_LINE_PASSES_ORIGIN/CHECK_LINE_PASSES_ORIGIN.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_LINE_PASSES_ORIGIN/CHECK_LINE_PASSES_ORIGIN.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 54610 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/HEXAGONAL_NUMBER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/HEXAGONAL_NUMBER/HEXAGONAL_NUMBER.js > generator/WrapCQuesTest/CQues/SwigRunTest/HEXAGONAL_NUMBER/HEXAGONAL_NUMBER.txt

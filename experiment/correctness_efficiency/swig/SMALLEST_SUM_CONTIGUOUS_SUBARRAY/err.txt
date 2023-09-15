@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58978 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SMALLEST_SUM_CONTIGUOUS_SUBARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SMALLEST_SUM_CONTIGUOUS_SUBARRAY/SMALLEST_SUM_CONTIGUOUS_SUBARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/SMALLEST_SUM_CONTIGUOUS_SUBARRAY/SMALLEST_SUM_CONTIGUOUS_SUBARRAY.txt

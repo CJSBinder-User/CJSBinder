@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 65570 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_VISIBLE_BOXES_PUTTING_ONE_INSIDE_ANOTHER/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_VISIBLE_BOXES_PUTTING_ONE_INSIDE_ANOTHER/NUMBER_VISIBLE_BOXES_PUTTING_ONE_INSIDE_ANOTHER.js > generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_VISIBLE_BOXES_PUTTING_ONE_INSIDE_ANOTHER/NUMBER_VISIBLE_BOXES_PUTTING_ONE_INSIDE_ANOTHER.txt

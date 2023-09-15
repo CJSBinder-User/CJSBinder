@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52838 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SUM_MANHATTAN_DISTANCES_PAIRS_POINTS/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SUM_MANHATTAN_DISTANCES_PAIRS_POINTS/SUM_MANHATTAN_DISTANCES_PAIRS_POINTS.js > generator/WrapCQuesTest/CQues/SwigRunTest/SUM_MANHATTAN_DISTANCES_PAIRS_POINTS/SUM_MANHATTAN_DISTANCES_PAIRS_POINTS.txt

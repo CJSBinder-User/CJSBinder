@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 55999 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUM_OF_DIGITS_IN_NUMBERS_FROM_1_TO_N/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUM_OF_DIGITS_IN_NUMBERS_FROM_1_TO_N/COUNT_SUM_OF_DIGITS_IN_NUMBERS_FROM_1_TO_N.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUM_OF_DIGITS_IN_NUMBERS_FROM_1_TO_N/COUNT_SUM_OF_DIGITS_IN_NUMBERS_FROM_1_TO_N.txt

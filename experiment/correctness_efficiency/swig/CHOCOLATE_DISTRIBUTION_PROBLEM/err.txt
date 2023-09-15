@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 72619 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHOCOLATE_DISTRIBUTION_PROBLEM/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHOCOLATE_DISTRIBUTION_PROBLEM/CHOCOLATE_DISTRIBUTION_PROBLEM.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHOCOLATE_DISTRIBUTION_PROBLEM/CHOCOLATE_DISTRIBUTION_PROBLEM.txt

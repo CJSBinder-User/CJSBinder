@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 72949 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_ANGLE_HOUR_HAND_MINUTE_HAND/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_ANGLE_HOUR_HAND_MINUTE_HAND/CALCULATE_ANGLE_HOUR_HAND_MINUTE_HAND.js > generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_ANGLE_HOUR_HAND_MINUTE_HAND/CALCULATE_ANGLE_HOUR_HAND_MINUTE_HAND.txt

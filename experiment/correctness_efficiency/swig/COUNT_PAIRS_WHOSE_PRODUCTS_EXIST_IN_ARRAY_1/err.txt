@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 65600 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_PAIRS_WHOSE_PRODUCTS_EXIST_IN_ARRAY_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_PAIRS_WHOSE_PRODUCTS_EXIST_IN_ARRAY_1/COUNT_PAIRS_WHOSE_PRODUCTS_EXIST_IN_ARRAY_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_PAIRS_WHOSE_PRODUCTS_EXIST_IN_ARRAY_1/COUNT_PAIRS_WHOSE_PRODUCTS_EXIST_IN_ARRAY_1.txt

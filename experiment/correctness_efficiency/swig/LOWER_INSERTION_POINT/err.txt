@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 52904 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/LOWER_INSERTION_POINT/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/LOWER_INSERTION_POINT/LOWER_INSERTION_POINT.js > generator/WrapCQuesTest/CQues/SwigRunTest/LOWER_INSERTION_POINT/LOWER_INSERTION_POINT.txt

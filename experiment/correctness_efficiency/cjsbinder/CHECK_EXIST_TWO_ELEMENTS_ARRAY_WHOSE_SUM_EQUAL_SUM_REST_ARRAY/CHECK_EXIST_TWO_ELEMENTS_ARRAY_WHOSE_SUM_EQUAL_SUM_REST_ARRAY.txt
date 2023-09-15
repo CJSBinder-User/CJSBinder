@@ -1,0 +1,14 @@
+Pair elements are 4 and 11
+true
+false
+Pair elements are 1 and 0
+true
+false
+false
+false
+false
+false
+Pair elements are 0 and 0
+true
+false
+type error!

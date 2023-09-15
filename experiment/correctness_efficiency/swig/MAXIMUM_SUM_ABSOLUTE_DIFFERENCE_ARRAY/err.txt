@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 70983 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_ABSOLUTE_DIFFERENCE_ARRAY/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_ABSOLUTE_DIFFERENCE_ARRAY/MAXIMUM_SUM_ABSOLUTE_DIFFERENCE_ARRAY.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMUM_SUM_ABSOLUTE_DIFFERENCE_ARRAY/MAXIMUM_SUM_ABSOLUTE_DIFFERENCE_ARRAY.txt

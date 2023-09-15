@@ -1,0 +1,11 @@
+false
+Triplet is -90, 18, 96true
+false
+false
+false
+false
+false
+false
+false
+Triplet is 1, 6, 20true
+type error!

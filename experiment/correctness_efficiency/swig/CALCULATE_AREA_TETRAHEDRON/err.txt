@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 67867 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_AREA_TETRAHEDRON/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_AREA_TETRAHEDRON/CALCULATE_AREA_TETRAHEDRON.js > generator/WrapCQuesTest/CQues/SwigRunTest/CALCULATE_AREA_TETRAHEDRON/CALCULATE_AREA_TETRAHEDRON.txt

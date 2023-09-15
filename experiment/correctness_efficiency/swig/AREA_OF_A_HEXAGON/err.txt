@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 72015 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/AREA_OF_A_HEXAGON/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/AREA_OF_A_HEXAGON/AREA_OF_A_HEXAGON.js > generator/WrapCQuesTest/CQues/SwigRunTest/AREA_OF_A_HEXAGON/AREA_OF_A_HEXAGON.txt

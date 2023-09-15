@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 59740 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBER_WAYS_REACH_GIVEN_SCORE_GAME/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBER_WAYS_REACH_GIVEN_SCORE_GAME/COUNT_NUMBER_WAYS_REACH_GIVEN_SCORE_GAME.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBER_WAYS_REACH_GIVEN_SCORE_GAME/COUNT_NUMBER_WAYS_REACH_GIVEN_SCORE_GAME.txt

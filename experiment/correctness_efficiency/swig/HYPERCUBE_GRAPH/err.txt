@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58555 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/HYPERCUBE_GRAPH/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/HYPERCUBE_GRAPH/HYPERCUBE_GRAPH.js > generator/WrapCQuesTest/CQues/SwigRunTest/HYPERCUBE_GRAPH/HYPERCUBE_GRAPH.txt

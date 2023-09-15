@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 58585 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/SQUARE_PYRAMIDAL_NUMBER_SUM_SQUARES/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/SQUARE_PYRAMIDAL_NUMBER_SUM_SQUARES/SQUARE_PYRAMIDAL_NUMBER_SUM_SQUARES.js > generator/WrapCQuesTest/CQues/SwigRunTest/SQUARE_PYRAMIDAL_NUMBER_SUM_SQUARES/SQUARE_PYRAMIDAL_NUMBER_SUM_SQUARES.txt

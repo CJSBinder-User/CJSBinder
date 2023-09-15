@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 60258 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_INDEXES_EQUAL_ELEMENTS_GIVEN_RANGE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_INDEXES_EQUAL_ELEMENTS_GIVEN_RANGE/NUMBER_INDEXES_EQUAL_ELEMENTS_GIVEN_RANGE.js > generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_INDEXES_EQUAL_ELEMENTS_GIVEN_RANGE/NUMBER_INDEXES_EQUAL_ELEMENTS_GIVEN_RANGE.txt

@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 56821 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMIZE_SUM_ARRII/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMIZE_SUM_ARRII/MAXIMIZE_SUM_ARRII.js > generator/WrapCQuesTest/CQues/SwigRunTest/MAXIMIZE_SUM_ARRII/MAXIMIZE_SUM_ARRII.txt

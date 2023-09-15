@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 54735 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/REMOVE_MINIMUM_ELEMENTS_EITHER_SIDE_2MIN_MAX/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/REMOVE_MINIMUM_ELEMENTS_EITHER_SIDE_2MIN_MAX/REMOVE_MINIMUM_ELEMENTS_EITHER_SIDE_2MIN_MAX.js > generator/WrapCQuesTest/CQues/SwigRunTest/REMOVE_MINIMUM_ELEMENTS_EITHER_SIDE_2MIN_MAX/REMOVE_MINIMUM_ELEMENTS_EITHER_SIDE_2MIN_MAX.txt

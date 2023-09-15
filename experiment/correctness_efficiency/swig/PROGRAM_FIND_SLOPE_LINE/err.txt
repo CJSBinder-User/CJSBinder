@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 69002 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_FIND_SLOPE_LINE/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_FIND_SLOPE_LINE/PROGRAM_FIND_SLOPE_LINE.js > generator/WrapCQuesTest/CQues/SwigRunTest/PROGRAM_FIND_SLOPE_LINE/PROGRAM_FIND_SLOPE_LINE.txt

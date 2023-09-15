@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 54885 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_TRIANGLES_N_MOVES/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_TRIANGLES_N_MOVES/NUMBER_TRIANGLES_N_MOVES.js > generator/WrapCQuesTest/CQues/SwigRunTest/NUMBER_TRIANGLES_N_MOVES/NUMBER_TRIANGLES_N_MOVES.txt

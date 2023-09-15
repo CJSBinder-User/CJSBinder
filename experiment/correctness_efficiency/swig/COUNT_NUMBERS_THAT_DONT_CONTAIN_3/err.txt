@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 63222 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBERS_THAT_DONT_CONTAIN_3/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBERS_THAT_DONT_CONTAIN_3/COUNT_NUMBERS_THAT_DONT_CONTAIN_3.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_NUMBERS_THAT_DONT_CONTAIN_3/COUNT_NUMBERS_THAT_DONT_CONTAIN_3.txt

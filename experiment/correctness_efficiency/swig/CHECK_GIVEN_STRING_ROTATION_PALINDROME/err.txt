@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 54490 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_GIVEN_STRING_ROTATION_PALINDROME/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_GIVEN_STRING_ROTATION_PALINDROME/CHECK_GIVEN_STRING_ROTATION_PALINDROME.js > generator/WrapCQuesTest/CQues/SwigRunTest/CHECK_GIVEN_STRING_ROTATION_PALINDROME/CHECK_GIVEN_STRING_ROTATION_PALINDROME.txt

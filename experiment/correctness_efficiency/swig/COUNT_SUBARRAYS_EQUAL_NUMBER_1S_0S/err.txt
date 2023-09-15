@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 71895 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUBARRAYS_EQUAL_NUMBER_1S_0S/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUBARRAYS_EQUAL_NUMBER_1S_0S/COUNT_SUBARRAYS_EQUAL_NUMBER_1S_0S.js > generator/WrapCQuesTest/CQues/SwigRunTest/COUNT_SUBARRAYS_EQUAL_NUMBER_1S_0S/COUNT_SUBARRAYS_EQUAL_NUMBER_1S_0S.txt

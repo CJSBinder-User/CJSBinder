@@ -1,0 +1,7 @@
+
+#
+# Fatal error in v8::ToLocalChecked
+# Empty MaybeLocal.
+#
+
+/bin/bash: line 1: 72467 Illegal instruction     (core dumped) ./generator/WrapCQuesTest/CQues/SwigRunTest/DICE_THROW_PROBLEM_1/ENGINE generator/WrapCQuesTest/CQues/SwigRunTest/DICE_THROW_PROBLEM_1/DICE_THROW_PROBLEM_1.js > generator/WrapCQuesTest/CQues/SwigRunTest/DICE_THROW_PROBLEM_1/DICE_THROW_PROBLEM_1.txt
