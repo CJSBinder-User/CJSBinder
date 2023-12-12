@@ -1,0 +1,487 @@
+
+[
+    {
+        "modulename":"VariableName",
+        "content":[
+            {
+                "kind":"ConstVar",
+                "id":"%",
+                "dictionary":{
+                    "isoname":"isolate",
+                    "contextname":"context",
+                    "globalname":"globalobj",
+                    "gluefuncarg":"args",
+                    "glue":"_glue",
+                    "constructor":"_constructor",
+                    "ptr":"ptr"
+                }
+            }
+        ]
+    },
+    {
+        "modulename":"Api",
+        "content":[
+            {
+                "setname":"JsTypeCheck",
+                "argument":[
+                    "'#jsvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {     
+                        "type":"vector<int> &",
+                        "pattern":[
+                            "'#jsvalue->IsArray()"
+                        ]
+                    },
+                    {
+                        "type":"string []",
+                        "pattern":[
+                            "'#jsvalue->IsArray()"
+                        ]
+                    },
+                    {
+                        "type":"char",
+                        "pattern":[
+                            "'#jsvalue->IsString()"
+                        ]
+                    },
+                    {     
+                        "type":"long",
+                        "pattern":[
+                            "'#jsvalue->IsNumber()"
+                        ]
+                    },
+                    {
+                        "type":"string",
+                        "pattern":[
+                            "'#jsvalue->IsString()"
+                        ]
+                    },
+                    {
+                        "type":"char []",
+                        "pattern":[
+                            "'#jsvalue->IsArray()"
+                        ]
+                    },
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "'#jsvalue->IsNumber()"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "'#jsvalue->IsBoolean()"
+                        ]
+                    },
+                    {     
+                        "type":"int",
+                        "pattern":[
+                            "'#jsvalue->IsInt32()"
+                        ]
+                    },
+                    {     
+                        "type":"unsigned int",
+                        "pattern":[
+                            "'#jsvalue->IsUint32()"
+                        ]
+                    },
+                    {     
+                        "type":"long long",
+                        "pattern":[
+                            "'#jsvalue->IsNumber()"
+                        ]
+                    },
+                    {     
+                        "type":"int []",
+                        "pattern":[
+                            "'#jsvalue->IsArray()"
+                        ]
+                    }
+                ]
+            },
+            {
+                "setname":"Js2CValueConvert",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {     
+                        "type":"vector<int> &",
+                        "pattern":[
+                            "Local<Array> '&v8arr = '#jsvalue.As<Array>();",
+                            "vector<int> '#cvalue;" ,
+                            "for(int i = 0;i < '&v8arr->Length();i++){",
+                            "   '#cvalue.push_back('&v8arr->Get(context,i).ToLocalChecked().As<Int32>()->Value());",
+                            "}"
+                        ]
+                    },
+                    {     
+                        "type":"string []",
+                        "pattern":[
+                            "Local<Array> '&v8arr = '#jsvalue.As<Array>();",
+                            "string '#cvalue['&v8arr->Length()];" ,
+                            "for(int i = 0;i < '&v8arr->Length();i++){",
+                            "   String::Utf8Value '&v8str('%isoname, '&v8arr->Get(context,i).ToLocalChecked());",
+                            "   std::string '&cppStr(*'&v8str);",
+                            "   '#cvalue[i] = '&cppStr;",
+                            "}"
+                        ]
+                    },
+                    {
+                        "type":"char",
+                        "pattern":[
+                            "String::Utf8Value '&v8str('%isoname, '#jsvalue);",
+                            "'#type '#cvalue = **'&v8str;"
+                        ]
+                    },
+                    {
+                        "type":"long",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Number>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Int32>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"string",
+                        "pattern":[
+                            "String::Utf8Value '&v8str('%isoname, '#jsvalue);",
+                            "'#type '#cvalue(*'&v8str);"
+                        ]
+                    },
+                    {
+                        "type":"char []",
+                        "pattern":[
+                            "Local<Array> '&v8arr = '#jsvalue.As<Array>();",
+                            "char '#cvalue['&v8arr->Length()];",
+                            "for(int i = 0;i < '&v8arr->Length();i++){",
+                            "   String::Utf8Value '&v8str('%isoname, '&v8arr->Get('%contextname,i).ToLocalChecked());",
+                            "   '#cvalue[i] = **'&v8str;",
+                            "}"
+                        ]
+                    },
+                    {     
+                        "type":"int []",
+                        "pattern":[
+                            "Local<Array> '&v8arr = '#jsvalue.As<Array>();",
+                            "int '#cvalue['&v8arr->Length()];" ,
+                            "for(int i = 0;i < '&v8arr->Length();i++){",
+                            "   '#cvalue[i] = '&v8arr->Get(context,i).ToLocalChecked().As<Int32>()->Value();",
+                            "}"
+                        ]
+                    },
+                    {
+                        "type":"long long",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Number>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"unsigned int",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Uint32>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue.As<Number>()->Value();"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "'#type '#cvalue = '#jsvalue->IsTrue();"
+                        ]
+                    }
+                ]
+            },
+            {
+                "setname":"C2JsValueConvert",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "element":[
+                    {
+                        "type":"unsigned long long",
+                        "pattern":[
+                            "Local<Number> '#jsvalue = Number::New('%isoname, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"char",
+                        "pattern":[
+                            "string '&tmpst(1,'#cvalue);",
+                            "Local<String> '#jsvalue = String::NewFromUtf8('%isoname, '&tmpst.c_str()).ToLocalChecked();"
+                        ]
+                    },
+                    {
+                        "type":"long",
+                        "pattern":[
+                            "Local<Number> '#jsvalue = Number::New('%isoname, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"double",
+                        "pattern":[
+                            "Local<Number> '#jsvalue = Number::New('%isoname, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"long long",
+                        "pattern":[
+                            "Local<Number> '#jsvalue = Number::New('%isoname, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"unsigned int",
+                        "pattern":[
+                            "Local<Integer> '#jsvalue = Uint32::NewFromUnsigned('%isoname, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"string",
+                        "pattern":[
+                            "Local<String> '#jsvalue = String::NewFromUtf8('%isoname, '#cvalue.c_str()).ToLocalChecked();"
+                        ]
+                    },
+                    {
+                        "type":"bool",
+                        "pattern":[
+                            "Local<Boolean> '#jsvalue = Boolean::New('%isoname, '#cvalue);"
+                        ]
+                    },
+                    {
+                        "type":"int",
+                        "pattern":[
+                            "Local<Integer> '#jsvalue = Int32::New('%isoname, '#cvalue);"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Routine",
+        "content":
+        [
+            {
+                "routinename":"JS2CVALUE",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "pattern":[
+                    "if (!'*JsTypeCheck'('#jsvalue,'#type')){",
+                    "   '%gluefuncarg.GetReturnValue().SetNull();",
+                    "   std::cout << \"type error!\" << std::endl;",
+                    "   return;",
+                    "}",
+                    "'*Js2CValueConvert'('#jsvalue,'#cvalue,'#type')"
+                ]
+            },
+            {
+                "routinename":"C2JSVALUE",
+                "argument":[
+                    "'#jsvalue",
+                    "'#cvalue",
+                    "'#type"
+                ],
+                "pattern":[
+                    "'*C2JsValueConvert'('#jsvalue,'#cvalue,'#type')",
+                    "'%gluefuncarg.GetReturnValue().Set('#jsvalue);"
+                ]
+            },
+            {
+                "routinename":"DEREFERENCE",
+                "argument":[
+                    "'#jsarg",
+                    "'#cpointername",
+                    "'#class"
+                ],
+                "pattern":[
+                    "'#class* ptr = static_cast<'#class*>('%gluefuncarg.This()->GetAlignedPointerFromInternalField(0));"
+                ]
+            }
+        ]
+    },
+    {
+        "modulename":"Pattern",
+        "content":[
+            {
+                "patname":"GLOBALENV",
+                "pattern":[
+                    "#include <stdio.h>",
+                    "#include <stdlib.h>",
+                    "#include <string.h>",
+                    "#include <iostream>",
+                    "#include <fstream>",
+                    "#include \"include/libplatform/libplatform.h\"",
+                    "#include \"include/v8.h\"",
+                    "#include \"example_header.h\"",
+                    "using namespace v8;",
+                    "void Print(const FunctionCallbackInfo<Value>& '%gluefuncarg){",
+                    "   v8::Isolate* isolate = '%gluefuncarg.GetIsolate();",
+                    "   v8::String::Utf8Value str(isolate, '%gluefuncarg[0]);",
+                    "   std::string cppStr(*str);",
+                    "   std::cout << cppStr << std::endl;",
+                    "}",
+                    "std::string getCode(const char* filename){",
+                    "std::ifstream read;",
+                    "   read.open(filename,std::ios::in);",
+                    "   std::string tmp;",
+                    "   std::string code = \"\";",
+                    "   while(getline(read,tmp)){",
+                    "   code = code + tmp;}",
+                    "   return code;",
+                    "}"
+                ]
+            },
+            {
+                "patname":"GLUECONTEXTINIT",
+                "pattern":[
+                    "int main(int argc, char* argv[]) ",
+                    "'ENTERSCOPE",
+                    "V8::InitializeICUDefaultLocation(\".\");",
+                    "V8::InitializeExternalStartupData(\".\");",
+                    "std::unique_ptr<Platform> platform = platform::NewDefaultPlatform();",
+                    "V8::InitializePlatform(platform.get());",
+                    "V8::Initialize();",
+                    "Isolate::CreateParams create_params;",
+                    "create_params.array_buffer_allocator = ArrayBuffer::Allocator::NewDefaultAllocator();",
+                    "Isolate* '%isoname = Isolate::New(create_params);",
+                    "'ENTERSCOPE",
+                    "//register code snippet",
+                    "Isolate::Scope isolate_scope('%isoname);",
+		            "HandleScope handle_scope('%isoname);",
+		            "Local<Context> '%contextname = Context::New('%isoname, NULL);",
+		            "Context::Scope context_scope('%contextname);",
+                    "Local<Object> '%globalname = '%contextname->Global();",
+                    "'%globalname->Set('%contextname, String::NewFromUtf8(isolate, \"print\").ToLocalChecked(), Function::New('%contextname, Print).ToLocalChecked()).ToChecked();"
+                ]
+            },
+            {
+                "patname":"FUNCGLUE",
+                "pattern":[
+                    "Local<String> '&key = String::NewFromUtf8('%isoname, \"'$cfuncname\").ToLocalChecked();",
+                    "Local<Function> '&func = Function::New(context, '$cfuncname'%glue).ToLocalChecked();",
+                    "'%globalname->Set('%contextname, '&key, '&func).ToChecked();"
+                ]
+            },
+            {
+                "patname":"CLASSGLUE",
+                "pattern":{
+                    "begin":[
+                        "Local<FunctionTemplate> '$cclassname_ctor_tpl = FunctionTemplate::New('%isoname, '$cclassname'%constructor);",
+                        "'$cclassname_ctor_tpl->SetClassName(String::NewFromUtf8('%isoname, \"'$cclassname\").ToLocalChecked());",
+	                "Local<ObjectTemplate> '&instance_t = '$cclassname_ctor_tpl->InstanceTemplate();",
+                        "'&instance_t->SetInternalFieldCount(1);"
+                    ],
+                    "funcglue":[
+                        "'$cclassname_ctor_tpl->PrototypeTemplate()->Set('%isoname, \"'$cfuncname\", FunctionTemplate::New('%isoname, '$cclassname_'$cfuncname'%glue));"
+                    ],
+                    "end":[
+                        "Local<Function> '$cclassname_func = '$cclassname_ctor_tpl->GetFunction('%contextname).ToLocalChecked();",
+                        "'%globalname->Set('%contextname, String::NewFromUtf8('%isoname, \"'$cclassname\").ToLocalChecked(), '$cclassname_func).ToChecked();"
+                    ]            
+                }
+            },
+            {
+                "patname":"FUNCPROXY",
+                "pattern":{
+                    "funcsignature":"void '$cfuncname'%glue(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                    "context":[  
+                        "Isolate* '%isoname = '%gluefuncarg.GetIsolate();",
+                        "Local<Context> '%contextname = '%isoname->GetCurrentContext();"
+                    ],
+                    "js2c":[
+                        "'@JS2CVALUE'('%gluefuncarg['$cargindex],'&carg,'$cargtype')"
+                    ],
+                    "js2cspecialtype":[
+                    ],
+                    "calling":{
+                        "argname":"'&carg",
+                        "resname":"cres"
+                    },
+                    "c2js":[
+                        "'@C2JSVALUE'(jsres,cres,'$crestype')"
+                    ]
+                }
+            },
+            {
+                "patname":"CLASSPROXY",
+                "pattern":[
+                    {
+                        "name":"CONSTRUCTOR",
+                        "funcsignature":"void '$cclassname'%constructor(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                        "context":[
+                            "Isolate* '%isoname = '%gluefuncarg.GetIsolate();",
+                            "Local<Context> '%contextname = '%isoname->GetCurrentContext();"
+                        ],
+                        "js2c":[],
+                        "js2cspecialtype":[
+                        ],
+                        "calling":{
+                            "argname":"'&carg",
+                            "cptrname":"'%ptr"
+                        },
+                        "content":[
+                            "if ('%gluefuncarg.IsConstructCall()) {",
+                            "   '%gluefuncarg.This()->SetAlignedPointerInInternalField(0, '%ptr);",
+                            "}",
+                            "else {",
+                            "   '%gluefuncarg.GetReturnValue().SetNull();",
+                            "   delete '%ptr;",
+                            "}"
+                        ]
+                    },
+                    {
+                        "name":"CLASSFUNCPROXY",
+                        "funcsignature":"void '$cclassname_'$cfuncname'%glue(const FunctionCallbackInfo<Value>& '%gluefuncarg)",
+                        "context":[
+                            "Isolate* '%isoname = '%gluefuncarg.GetIsolate();",
+                            "Local<Context> '%contextname = '%isoname->GetCurrentContext();",
+                            "'@DEREFERENCE'('%gluefuncarg,'%ptr,'$cclassname')"
+                        ],
+                        "js2c":[],
+                        "js2cspecialtype":[],
+                        "calling":{
+                            "argname":"'&carg",
+                            "resname":"cres",
+                            "cptrname":"'%ptr",
+                            "proxy":""
+                        },
+                        "c2js":[]
+                    }
+                ]
+            },
+            {
+                "patname":"GLUECONTEXTEND",
+                "pattern":[
+                    "std::string code = getCode(argv[1]);",
+                    "Local<String> source = String::NewFromUtf8('%isoname, code.c_str(),NewStringType::kNormal).ToLocalChecked();",
+                    "Local<Script> script = Script::Compile('%contextname, source).ToLocalChecked();",
+                    "Local<Value> result = script->Run('%contextname).ToLocalChecked();",
+                    "'EXITSCOPE",
+                    "'%isoname->Dispose();",
+	                "V8::Dispose();",
+	                "V8::ShutdownPlatform();",
+	                "delete create_params.array_buffer_allocator;",
+                    "'EXITSCOPE"
+                ]
+            }
+        ]
+    }   
+]

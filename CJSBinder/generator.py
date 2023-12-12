@@ -324,6 +324,8 @@ class V8Glue:
         self.cl.append(self.v8json.InterVarZeroCode)
         self.cl.tab = temp
     def funcGlueGene(self):
+        if len(self.funcdict) == 0:
+            return
         self.cl.append("/*function glue*/")
         context = Context()
         pat = self.findPattern("FUNCGLUE")
@@ -481,6 +483,8 @@ class V8Glue:
             #self.funccostdic[funcname] = (edtime-sttime)*1000
             self.funclengthdic[funcname] = endlength - begleng
     def proxyFuncGene(self):
+        if(len(self.funcdict) == 0):
+            return
         pt = self.findPattern("FUNCPROXY")
         for (hfilename,funcs) in self.funcdict.items():
             self.proxyFuncGenerator(pt,funcs,Context())
@@ -503,6 +507,8 @@ class V8Glue:
         if len(pt["js2cspecialtype"]) == 0:
             pt["js2cspecialtype"] = self.findPattern("FUNCPROXY")["js2cspecialtype"]
     def proxyClassGene(self):
+        if(len(self.classdict) == 0):
+            return
         pt = self.findPattern("CLASSPROXY")
         constructorpt = self.findClassPat(pt,"CONSTRUCTOR")
         proxyclassfuncpt = self.findClassPat(pt,"CLASSFUNCPROXY")
@@ -525,7 +531,9 @@ class V8Glue:
                 funclist = clas["funclist"]
                 self.proxyFuncGenerator(proxyclassfuncpt,funclist,ct)
     def classGlueGene(self):
-        #self.cl.append("/*class glue*/")
+        if len(self.classdict) == 0:
+            return
+        self.cl.append("/*class glue*/")    
         pat = self.findPattern("CLASSGLUE")
         bept = pat["begin"]
         fcpt = pat["funcglue"]
@@ -558,6 +566,7 @@ class V8Glue:
     def registerGene(self):
         #self.enterScope()
         self.pattern2Code(self.findPattern("GLUECONTEXTINIT"))
+        self.funcGlueGene()
         self.classGlueGene()
         self.pattern2Code(self.findPattern("GLUECONTEXTEND"))
         #self.exitScope()
@@ -565,7 +574,7 @@ class V8Glue:
         #self.userInclude()
         if self.findPattern("GLOBALENV") != None:
             self.cl.extend(self.findPattern("GLOBALENV"))
-        #self.proxyFuncGene()
+        self.proxyFuncGene()
         self.proxyClassGene()
         #self.cl.append("int main()")
         self.registerGene()
