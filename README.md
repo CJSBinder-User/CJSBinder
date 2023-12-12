@@ -11,6 +11,8 @@
 -H:&ensp;The declaration of the existing C class.       
 -o:&ensp;The file name of output(generated code).    
 
+A [detailed explanation](/CJSBinder/README.md) of configuration file is also given. 
+
 # Experiment
 The experiments are conducted on a 3.20GHZ AMD Ryzen 7 5800H processor with 16 GB of 3200 MHz DDR4 running Linux 18.04 OS. CJSBinder is run with **Python 3.7.5** and **Clang 8.0.0**. **Swig** is the newest version 4.1.1.
 
