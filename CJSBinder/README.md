@@ -52,7 +52,7 @@ Template code will be synthesized as follows.
     + calling: Call the wrapped method.
     + c2js: Convert the return value of C function to a JavaScript value and then return it.
 
-You can leave **js2c** and **c2js** in **CLASSPROXY** blank but only implement them in **FUNCPROXY** to indicate that they have the same converting approaches with **FUNCPROXY**.
+You can leave **js2c** and **c2js** in **CLASSPROXY** blank but only implement them in **FUNCPROXY** to indicate that those in **CLASSPROXY** have the same converting approaches with **FUNCPROXY**.
 
 
 **2.** Registering code:
