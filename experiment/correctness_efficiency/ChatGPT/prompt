@@ -1,0 +1,49 @@
+Can you generate glue code to expose the following C++ class to JavaScript? 
+I want to use V8 8.0 as framework(engine). The glue code is compiled with the original C++ code to generate an engine. 
+The engine can read a JavaScript file from command line. The JavaScript file will create an object of the class and invoke the method in class.
+You only need to output 1. a wrapper function of constructor, 2. a wrapper function of the public method and 3. a snippet of code that registers the wrapper class to the JavaScript environment. The wrapped class and mehod in JavaScript have the same name with C++.
+You should tag every code snippet with the index like [code snippet x]. For example:
+```//Example C++ class to be exposed
+class CClass{
+public:
+    int func(int x);
+CClass() {}
+};
+```
+Following is generated code:
+```
+//[code snippet 1]
+void CClass_constructor(const v8::FunctionCallbackInfo<v8::Value>& args) {
+    CClass* obj = new CClass();
+    args.This()->SetInternalField(0, v8::External::New(args.GetIsolate(), obj));
+}
+```
+```
+//[code snippet 2]
+void CClass_func(const v8::FunctionCallbackInfo<v8::Value>& args) {
+    if (args.Length() < 1 || !args[0]->IsInt32()) {
+        args.GetReturnValue().Set(v8::Undefined(args.GetIsolate()));
+        return;
+    }
+    CClass* obj = static_cast<CClass*>(v8::External::Cast(*args.This()->GetInternalField(0))->Value());
+    int x = args[0]->Int32Value(args.GetIsolate()->GetCurrentContext()).FromMaybe(0);
+    int result = obj->func(x);
+    args.GetReturnValue().Set(v8::Integer::New(args.GetIsolate(), result));
+}
+```
+```
+//[code snippet 3]
+{//assumed that 'isolate' and 'context' has been initialized
+    v8::Local<v8::FunctionTemplate> tpl = v8::FunctionTemplate::New(isolate, CClass_constructor);
+    tpl->InstanceTemplate()->SetInternalFieldCount(1);
+    tpl->SetClassName(v8::String::NewFromUtf8(isolate, "CClass").ToLocalChecked());
+    v8::Local<v8::FunctionTemplate> method_tpl = v8::FunctionTemplate::New(isolate, CClass_func);
+    tpl->PrototypeTemplate()->Set(isolate, "func", method_tpl);
+    v8::Local<v8::Function> constructor = tpl->GetFunction(context).ToLocalChecked();
+    context->Global()->Set(context, v8::String::NewFromUtf8(isolate, "CClass").ToLocalChecked(), constructor);
+}
+```
+
+```//The C++ class is going to be exposed
+CODE_TO_BE_FILLED
+```
