@@ -1,0 +1,1 @@
+<unknown>:979: Uncaught TypeError: obj.F_M_A_S_O_K_L_1_f_gold is not a function

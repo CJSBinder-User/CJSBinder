@@ -1,0 +1,10 @@
+No subarray found0
+No subarray found0
+No subarray found0
+No subarray found0
+No subarray found0
+No subarray found0
+Sum found between indexes 1 and 11
+No subarray found0
+No subarray found0
+No subarray found0

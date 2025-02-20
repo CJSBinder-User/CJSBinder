@@ -1,0 +1,21 @@
+
+
+#
+# Fatal error in , line 0
+# Check failed: !value_obj->IsJSReceiver() || value_obj->IsTemplateInfo().
+#
+#
+#
+#FailureMessage Object: 0x7ffeeeed5e40
+==== C stack trace ===============================
+
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0x6d7f73) [0x560e60053f73]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0xaf05d) [0x560e5fa2b05d]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0x6d3120) [0x560e6004f120]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0xb65c1) [0x560e5fa325c1]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0xaaf2e) [0x560e5fa26f2e]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0xab351) [0x560e5fa27351]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0xab65e) [0x560e5fa2765e]
+    /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f17156a4c87]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/MAXIMUM_AREA_RECTANGLE_PICKING_FOUR_SIDES_ARRAY_1/v8engine(+0xa9bba) [0x560e5fa25bba]
+Illegal instruction (core dumped)

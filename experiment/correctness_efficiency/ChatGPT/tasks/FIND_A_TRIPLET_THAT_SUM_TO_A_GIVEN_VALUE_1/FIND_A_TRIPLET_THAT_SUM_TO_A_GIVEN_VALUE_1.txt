@@ -1,0 +1,5 @@
+Triplet is 0, 0, 0true
+Triplet is 0, 0, 0true
+false
+Triplet is 0, 0, 0true
+Triplet is 0, 0, 0true

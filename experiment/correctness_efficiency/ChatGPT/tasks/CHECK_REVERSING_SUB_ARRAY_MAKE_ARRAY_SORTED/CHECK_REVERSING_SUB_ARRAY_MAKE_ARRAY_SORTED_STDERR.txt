@@ -1,0 +1,21 @@
+
+
+#
+# Fatal error in , line 0
+# Check failed: !value_obj->IsJSReceiver() || value_obj->IsTemplateInfo().
+#
+#
+#
+#FailureMessage Object: 0x7ffdece101c0
+==== C stack trace ===============================
+
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0x6d6cd3) [0x560a573b3cd3]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0xae61d) [0x560a56d8b61d]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0x6d1e80) [0x560a573aee80]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0xb5b81) [0x560a56d92b81]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0xab03e) [0x560a56d8803e]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0xab433) [0x560a56d88433]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0xab740) [0x560a56d88740]
+    /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fdf1b617c87]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/CHECK_REVERSING_SUB_ARRAY_MAKE_ARRAY_SORTED/v8engine(+0xa9bba) [0x560a56d86bba]
+Illegal instruction (core dumped)

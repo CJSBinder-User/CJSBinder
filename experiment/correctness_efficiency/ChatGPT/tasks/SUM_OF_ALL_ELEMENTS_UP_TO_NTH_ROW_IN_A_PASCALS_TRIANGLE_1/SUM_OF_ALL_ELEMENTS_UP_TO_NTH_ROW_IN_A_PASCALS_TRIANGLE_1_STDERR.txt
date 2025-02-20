@@ -1,0 +1,21 @@
+
+
+#
+# Fatal error in , line 0
+# Check failed: !value_obj->IsJSReceiver() || value_obj->IsTemplateInfo().
+#
+#
+#
+#FailureMessage Object: 0x7ffdd7137d60
+==== C stack trace ===============================
+
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0x6d6133) [0x561484323133]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0xad05d) [0x561483cfa05d]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0x6d12e0) [0x56148431e2e0]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0xb45c1) [0x561483d015c1]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0xaaa83) [0x561483cf7a83]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0xaae8f) [0x561483cf7e8f]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0xab19c) [0x561483cf819c]
+    /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7fa26afdbc87]
+    ./CJSBinder/WrapCQuesTest/CQues/LLMRunTest/SUM_OF_ALL_ELEMENTS_UP_TO_NTH_ROW_IN_A_PASCALS_TRIANGLE_1/v8engine(+0xa9b3a) [0x561483cf6b3a]
+Illegal instruction (core dumped)

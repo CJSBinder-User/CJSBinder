@@ -1,0 +1,8 @@
+class string;
+template <typename T>
+class vector;
+class FAST_MULTIPLICATION_METHOD_WITHOUT_USING_MULTIPLICATION_OPERATOR_RUSSIAN_PEASANTS_ALGORITHM {
+public:
+    unsigned int F_M_M_W_U_M_O_R_P_A_f_gold(unsigned int a, unsigned int b);
+FAST_MULTIPLICATION_METHOD_WITHOUT_USING_MULTIPLICATION_OPERATOR_RUSSIAN_PEASANTS_ALGORITHM() {}
+};

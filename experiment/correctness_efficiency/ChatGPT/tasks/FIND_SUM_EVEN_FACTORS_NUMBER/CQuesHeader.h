@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+class FIND_SUM_EVEN_FACTORS_NUMBER {
+public:
+    int F_S_E_F_N_f_gold(int n)
+    { 
+        if ( n % 2 != 0 ) return 0 ; 
+        int res = 1 ; 
+        for ( int i = 2 ; 
+        i <= sqrt ( n ) ; 
+        i ++ ) { 
+            int count = 0 , curr_sum = 1 , curr_term = 1 ; 
+            while ( n % i == 0 ) { 
+                count ++ ; 
+                n = n / i ; 
+                if ( i == 2 && count == 1 ) curr_sum = 0 ; 
+                curr_term *= i ; 
+                curr_sum += curr_term ; 
+            } 
+            res *= curr_sum ; 
+        } 
+        if ( n >= 2 ) res *= ( 1 + n ) ; 
+        return res ; 
+    } 
+FIND_SUM_EVEN_FACTORS_NUMBER() {}
+};
